@@ -1,0 +1,68 @@
+.service
+{
+    display: flex;
+    padding: 90px 0px 90px;
+    text-align: center;
+    background-color: $white;
+    flex-direction: column;
+
+    &__title
+    {
+        color: $black;
+        margin-top: 35px;
+        margin-bottom: 40px;
+        font-size: $title-font-size;
+        font-weight: 500;
+    }
+
+    &__subtitle
+    {
+        color: $black;
+        font-style: italic;
+        font-size: $subtitle-font-size;
+        margin-bottom: 80px;
+    }
+
+        .service-content
+        {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+
+            &__card
+            {
+            width: 400px;
+            height: 400px;
+            margin-bottom: 70px;
+
+            &-title
+            {
+                margin-left: 80px;
+                margin-right: 80px;
+                font-weight: 700;
+                font-size: $subtitle-font-size;
+            }
+
+            &-img
+            {
+                display: inline-block;
+                width: 300px;
+                height: 300px;
+                border-radius: 100%;
+                border: 3px solid #fc742b49;
+                padding: 3px;
+                box-shadow: $heavy-shadow;
+                margin: 10px 0px 10px 0px;
+            }
+            &-subtitle
+            {
+                margin-left: 80px;
+                margin-right: 80px;
+                font-style: italic;
+                font-size: $subtitle-font-size;
+            }
+
+        }
+    }
+}

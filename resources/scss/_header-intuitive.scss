@@ -1,0 +1,308 @@
+.header-intuitive
+{
+    background-color: $gray;
+    display: flex;
+	position: sticky;
+	top: 0;
+    width: 100%;
+    align-items: center;
+    z-index: 2;
+    height: 80px;
+    transition: all 0.5s ease-in-out !important;
+
+
+    &__contain
+    {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+        margin-right: 10%;
+        margin-left: 10%;
+
+        &-link
+        {
+            width: min-content;
+            min-width: 275px;
+
+
+            &-logo
+            {
+
+                vertical-align: middle;
+                width: 30%;
+                min-width: 200px;
+                height: auto;
+            }
+
+            &-duo
+            {
+                margin-left: 10px;
+                vertical-align: middle;
+                width: 6%;
+                min-width: 60px;
+                max-width: 20%;
+                height: auto;
+            }
+        }
+
+        .navbar-intuitive
+        {
+            padding: 0;
+
+            .mobile-nav-toggle
+            {
+                color: $white;
+                font-size: 28px;
+                cursor: pointer;
+                display: none;
+                line-height: 0;
+                transition: 0.5s;
+            }
+
+                &__menu 
+                {
+                    align-items: center;
+                    display: flex;
+                    list-style: none;
+
+                    &-item 
+                    {
+                        text-align: center;
+                        position: relative;    
+                        border-bottom: 2px solid transparent;
+                        transition: 200ms ease-in-out;
+                    
+                        &-link
+                        {
+                        text-decoration: none;
+                        color: $white;  
+                        padding: 10px 15px 10px 15px;
+                        font-weight: 500;
+                        font-size: $nav-font-size;   
+                        display: flex;
+                        align-items: baseline;
+                        justify-content: space-between;
+                            
+                        i
+                        {
+                            font-size: 12px;
+                            padding-left: 5px;
+                        }
+                        }   
+
+                        &:hover
+                        {
+                            border-bottom: 2px solid $white;
+                        }
+                        
+                    }
+                    
+                    
+                    .navbar-intuitive__drop
+                    {
+
+                        &-submenu
+                        {
+                            position: absolute;
+                            background-color: $hard-orange;
+                            top: 100%;
+                            width: 11vw;
+                            height: 11vh;
+                            left: -45%;
+                            visibility: hidden;
+                            opacity: 0;
+                            transition: visibility 0s, opacity 100ms linear;
+                            padding: 10px 0;
+
+                            &-item
+                            {
+                                &-link
+                                {
+                                    i
+                                    {
+                                        font-size: 12px;
+                                        padding-left: 5px;
+                                    }
+                                }
+                            }
+                        }
+  
+                        &:hover
+                        {
+                            .navbar-intuitive__drop-submenu
+                            {
+                                opacity: 1;
+                                visibility: visible;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                box-shadow: $heavy-shadow;
+                                width: 223px;
+                                height: auto;
+                                justify-content: center;
+                                border-radius: 10px;
+                                padding: 10px 0;
+
+                                &-item
+                                {
+                                    border-bottom: 1px solid transparent;
+                                    padding: 10px 0px;
+
+                                    &-sublist
+                                    {
+                                        position: absolute;
+                                        background-color: $hard-orange;
+                                        top: 0;
+                                        left: 100%;
+                                        visibility: hidden;
+                                        opacity: 0;
+                                        transition: visibility 0s, opacity 100ms linear;
+                                        padding: 10px 0;                                    
+                                    }
+
+                                    &:hover
+                                    {
+                                        .navbar-intuitive__drop-submenu-item-sublist
+                                        {
+                                            opacity: 1;
+                                            visibility: visible;
+                                            display: flex;
+                                            flex-direction: column;
+                                            align-items: center;
+                                            width: 150px;
+                                            height: auto;
+                                            justify-content: center;
+                                            border-radius: 10px;
+                                            box-shadow: $heavy-shadow;
+                                            padding: 10px 0;
+
+                                            &-subitem
+                                            {
+                                                border-bottom: 1px solid transparent;
+                                                padding: 10px 0px;
+
+                                                &-link
+                                                {
+                                                    color: $white;
+                                                    padding: 10px 20px;
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                    &-link
+                                    {
+                                        color: $white;
+                                        padding: 10px 20px;
+                                    }
+                                }
+                            }
+                        }
+
+                        &-submenus
+                        {
+                            position: absolute;
+                            background-color: $hard-orange;
+                            top: 100%;
+                            left: -70%;  
+                            visibility: hidden;
+                            opacity: 0;
+                            transition: visibility 0s, opacity 100ms linear;
+
+                            &-item
+                            {
+                                &-link
+                                {
+                                    i
+                                    {
+                                        font-size: 12px;
+                                        padding-left: 5px;
+                                    }
+                                }
+                            }
+                            
+                        }
+  
+                        &:hover
+                        {
+                            .navbar-intuitive__drop-submenus
+                            {
+                                opacity: 1;
+                                visibility: visible;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                width: 240px;
+                                height: auto;
+                                justify-content: center;
+                                border-radius: 10px;
+                                box-shadow: $heavy-shadow;
+                                padding: 10px 0;
+
+                                &-item
+                                {
+                                    border-bottom: 1px solid transparent;
+                                    padding: 10px 0px;
+
+                                    &-sublist
+                                    {
+                                        position: absolute;
+                                        background-color: $hard-orange;
+                                        top: 50%;
+                                        left: 100%;
+                                        visibility: hidden;
+                                        opacity: 0;
+                                        transition: visibility 0s, opacity 100ms linear;
+                                        padding: 10px 0;                                    
+                                    }
+
+                                    &:hover
+                                    {
+                                        .navbar-intuitive__drop-submenus-item-sublist
+                                        {
+                                            opacity: 1;
+                                            visibility: visible;
+                                            display: flex;
+                                            flex-direction: column;
+                                            align-items: center;
+                                            width: 150px;
+                                            height: auto;
+                                            justify-content: center;
+                                            border-radius: 10px;
+                                            box-shadow: $heavy-shadow;
+                                            padding: 10px 0;
+
+                                            &-subitem
+                                            {
+                                                border-bottom: 1px solid transparent;
+                                                padding: 10px 0px;
+
+                                                &-link
+                                                {
+                                                    color: $white;
+                                                    padding: 10px 20px;
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                    &-link
+                                    {
+                                        color: $white;
+                                        padding: 10px 20px;
+                                    }
+                                }
+                            }
+                        } 
+                    } 
+                }
+        }
+    }
+} 
+
+.header-scrolled
+{
+    height: 60px;
+}
+

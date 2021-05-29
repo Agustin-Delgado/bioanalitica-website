@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<!-- Inicio HTML -->
+<html lang="es">
+<!-- Inicio head -->
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <link href="resources/scss/style.css" rel="stylesheet"> <!-- Linkeo de recurso css -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,400,500,700"
+        rel="stylesheet"> <!-- Fuente -->
+    <title>Bio Analitica</title>
+
+</head>
+<!-- Fin head -->
+
+<body>
+
+    <!--- INICIO HEADER --->
+
+    <header class="header" id="header-active">
+        <div class="header__contain">
+            <a class="header__contain-link" href="index.html"><img src="./resources/images/image.png"
+                    class="header__contain-logo" alt="logoImg"></a>
+            <nav class="navbar" id="navbar">
+                <ul class="navbar__menu">
+                    <li class="navbar__menu-item"><a class="navbar__menu-item-link" href="index.html#inicio">Inicio</a></li>
+                    <li class="navbar__menu-item navbar__drop"><a class="navbar__menu-item-link"
+                            href="index.html#productos">Productos <i class="bi bi-chevron-down"></i></a>
+                        <ul class="navbar__drop-submenu">
+                            <li class="navbar__drop-submenu-item"><a class="navbar__drop-submenu-item-link"
+                                    href="productos-medicina.html">Productos medicina</a></li>
+                            <li class="navbar__drop-submenu-item"><a class="navbar__drop-submenu-item-link"
+                                    href="productos-analitica.html">Productos analitica</a></li>
+                        </ul>
+                    </li>
+                    <li class="navbar__menu-item navbar__drop"><a class="navbar__menu-item-link" href="index.html#service">Service
+                            <i class="bi bi-chevron-down"></i></a>
+                        <ul class="navbar__drop-submenus">
+                            <li class="navbar__drop-submenus-item"><a class="navbar__drop-submenus-item-link"
+                                    href="service.html">Nuestro servicio técnico</a></li>
+                        </ul>
+                    <li class="navbar__menu-item"><a class="navbar__menu-item-link" href="index.html#contacto">Contacto</a></li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav>
+        </div>
+    </header>
+
+    <!--- FIN HEADER --->
+
+    <main id="cabecera">
+        <!-- inicio breadcrumb -->
+        <section class="breadcrumb">
+
+            <h3 class="breadcrumb__title">Nuestros productos</h3>
+
+            <ol class="breadcrumb__section">
+                <li class="breadcrumb__section-list"> <a class="breadcrumb__section-list-link" href="index.html"> Inicio</a> </li>
+                <li class="breadcrumb__section-list"> <a class="breadcrumb__section-list-link" href="index.html#productos">/ Productos </a> </li>
+                <li class="breadcrumb__section-list"> / Productos analitica </li>
+            </ol>
+
+    </section>
+        <!-- Fin breadcrumb -->
+        <section class="productos-medicina">
+
+            <div class="productos-medicina__swiper">
+
+                <div class="swiper-container mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img class="productos-medicina__swiper-img" src="./resources/images/CF-H190LI.png" alt=""></div>
+                      <div class="swiper-slide"><img class="productos-medicina__swiper-img" src="./resources/images/CF-H190LI.png" alt=""></div>
+                      <div class="swiper-slide"><img class="productos-medicina__swiper-img" src="" alt=""></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-counter"></div>
+                  </div>
+            </div>
+
+            
+
+            <div class="productos-medicina__features">
+
+                <div class="productos-medicina__features-details">
+
+                    <h4 class="productos-medicina__features-details-title">Caracteristicas</h4>
+
+                    <ul class="productos-medicina__features-details-list">
+                        <li class="productos-medicina__features-details-list-item">Marca:</li>
+                        <li class="productos-medicina__features-details-list-item">Modelo:</li>
+                        <li class="productos-medicina__features-details-list-item">Compatibilidad:</li>
+                        <li class="productos-medicina__features-details-list-item">Especialidad:</li>
+                    </ul>
+
+                </div>
+
+                <div class="productos-medicina__features-description">
+
+                    <h4 class="productos-medicina__features-description-title">Descripción del producto</h4>
+                    <p class="productos-medicina__features-description-subtitle">Breve descripcion del producto</p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- INICIO FOOTER --->
+
+    <footer class="footer" data-aos="fade-up">
+
+        <img class="footer__img" src="./resources/images/GPTG-1-blanco-1024x821.png" alt="logoFooter">
+
+        <div class="footer-media">
+
+            <div class="footer-media__content" data-aos="fade-up" data-aos-duration="500" data-aos-offset="70">
+
+                <img class="footer-media__content-img" src="./resources/images/email-512.png" alt="emailLogo">
+                <p class="footer-media__content-subtitle">info@bioanalitica.la</p>
+
+            </div>
+
+            <div class="footer-media__content" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="70">
+
+                <img class="footer-media__content-img" src="./resources/images/map-marker-2-512.png" alt="markerLogo">
+                <p class="footer-media__content-subtitle">Av. Boedo 1813, Buenos Aires</p>
+
+            </div>
+
+            <div class="footer-media__content" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="70">
+
+                <img class="footer-media__content-img" src="./resources/images/linkedin-512.png" alt="linkedinLogo">
+                <p class="footer-media__content-subtitle">Bio Analítica</p>
+
+            </div>
+
+            <div class="footer-media__content" data-aos="fade-up" data-aos-duration="2000" data-aos-offset="70">
+
+                <img class="footer-media__content-img" src="./resources/images/instagram-512.png" alt="instagramLogo">
+                <p class="footer-media__content-subtitle">@bioanalitica.la</p>
+
+            </div>
+
+            <div class="footer-media__content" data-aos="fade-up" data-aos-duration="2500" data-aos-offset="70">
+
+                <img class="footer-media__content-img" src="./resources/images/facebook-512.png" alt="facebookLogo">
+                <p class="footer-media__content-subtitle">bioanalitica.la</p>
+
+            </div>
+
+            <div class="footer-media__content" data-aos="fade-up" data-aos-duration="3000" data-aos-offset="70">
+
+                <img class="footer-media__content-img" src="./resources/images/phone-68-512.png" alt="telLogo">
+                <p class="footer-media__content-subtitle">+54 11 4909-2600</p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- FIN FOOTER --->
+
+    <!-- INICIO COPY --->
+
+    <div class="copy">
+
+        <p class="copy__title">© Copyright <strong class="copy__hard">Bioanalitica.</strong> All Rights Reserved</p>
+
+    </div>
+
+    <!-- FIN COPY --->
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>  
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./resources/js/main.js"></script>
+
+</body>
+<!-- Fin body -->
+
+</html>
+<!-- Fin HTML -->
