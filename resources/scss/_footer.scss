@@ -1,12 +1,13 @@
 footer
 {
     background-color: $white;
+
     .footer
     {
         display: flex;
         background: $principal-orange;
         padding-top: 40px;
-        color: white;
+        color: $white;
         text-align: center;
         flex-direction: column;
         align-items: center;
@@ -36,18 +37,17 @@ footer
 
                 &-img
                 {
-                width: 20%;
-                max-width: 300px;
+                    width: 15%;
+                    max-width: 300px;
                 }
 
                 &-subtitle
                 {
-
                     font-size: $social-font-size;
-
                 }
             }  
         }
+
        .copy
         {
             width: 100%;
