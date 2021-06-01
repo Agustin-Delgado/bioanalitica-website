@@ -1,0 +1,457 @@
+.hero-polymedco
+{
+    &__contain
+    {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+
+        &-video
+        {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            transform: translate(-50%,-50%);
+            z-index: -1;
+            
+        }
+
+        &-title
+        {
+            z-index: 1;
+            color: $white;
+            font-size: $big-title-font-size;
+            font-weight: 540;
+            text-align: center;
+        }
+
+        &-subtitle
+        {
+            z-index: 1;
+            color: $white;
+            font-size: $breadcrumb-font-size;
+            font-weight: 400;
+            text-align: center;
+        }
+    }
+}
+
+.polymedco-main
+{
+    background-color: $white;
+    color: $light-blue;
+    width: 100%;
+
+    .product-description
+    {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: stretch;
+        overflow-x: hidden;
+        background-color: rgb(110, 164, 202);
+        padding: 12% 6%;    
+
+        .product-description__title 
+        {
+            color: $very-light-blue;
+            margin-bottom: 3%;
+            font-size: $big-title-font-size;
+        }
+
+        &__subtitle
+        {
+            color: $very-light-blue;
+            font-size: $subtitle-font-size;
+        }
+    }
+
+    .components
+    {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        padding-top: 12%;
+        padding-bottom: 12%;
+        overflow-x: hidden;
+
+        .components-title
+        {
+            font-size: $big-submenu-title-font-size;
+            font-weight: 510;
+            margin-bottom: 10px;
+            color: $white;
+            text-align: center;
+            color: $light-blue;
+        }
+        
+        .components__row
+        {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+            padding: 50px;
+
+            &-block
+            {
+                width: 50%;
+                height: 800px;
+                display: flex;
+                flex-direction: column;
+                align-content: center;
+                justify-content: flex-start;
+                align-items: center;
+                margin-left: 25px;
+                margin-right: 25px;
+                background-color: $very-light-blue;
+                padding: 50px;
+                border-radius: 50px;
+                transition: all 200ms ease-in-out 0s;
+
+                &-title
+                {
+                    font-size: $title-font-size;
+                    padding-bottom: 50px;
+                }
+
+                &-img
+                {
+                    padding-bottom: 50px;
+                }
+
+                &-subtitle
+                {
+                    padding-bottom: 50px;
+                    font-size: $subtitle-font-size;
+                }
+
+                &:hover
+                {
+                    transform: scale(1.05);
+                }
+            }
+        }
+    }
+
+    .standarized
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        overflow-x: hidden;
+
+        .standarized-title
+        {
+            font-size: $big-submenu-title-font-size;
+            font-weight: 510;
+            margin-bottom: 50px;
+        }
+
+        &-subtitle
+        {
+            font-size: $title-font-size;
+            padding-bottom: 50px;
+        }
+
+        &__row
+        {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+            padding-top: 50px;
+
+            &-column
+            {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                align-content: center;
+                justify-content: center;
+                width: 50%;
+                padding: 0 100px;
+                margin: 0 50px;
+                background-color: $light-blue;
+                height: 300px;
+                border-radius: 10px;
+
+                &-title
+                {
+                    color: $white;
+                    padding-bottom: 20px;
+                    font-size: $breadcrumb-font-size;
+                }
+
+                &-subtitle
+                {
+                    color: $white;
+                    font-size: $subtitle-font-size;
+                }
+            }
+        }
+    }
+    
+    .reasons
+    {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        padding-top: 12%;
+        padding-bottom: 12%;
+        background-color: $white;
+        overflow-x: hidden;
+
+        .reasons-title
+        {
+            font-size: $big-submenu-title-font-size;
+            font-weight: 510;
+            margin-bottom: 10px;
+            color: $light-blue;
+            text-align: center;
+        }
+
+        .reasons__row-head
+        {
+            padding-top: 6%;
+            display: flex;
+            flex-direction: row;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            padding-bottom: 100px;
+
+            &-title
+            {
+                font-size: $title-font-size;
+                color: $polymedco-blue;
+            }
+
+            &-img
+            {
+                width: 100%;
+            }
+        }
+
+        &__row
+        {
+            padding-top: 6%;
+            padding-bottom: 6%;
+            display: flex;
+            flex-direction: row;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+
+            &-description
+            {
+                display: flex;
+                flex-direction: row;
+                align-content: center;
+                justify-content: space-evenly;
+                align-items: center;
+                width: 100%;
+
+                &-img
+                {
+                    width: 25%;
+                    height: auto;
+                }
+
+                &-column
+                {
+                    display: flex;
+                    flex-direction: column;
+                    align-content: center;
+                    justify-content: center;
+                    align-items: flex-start;
+                    width: 50%;
+
+                    &-title
+                    {
+                        color: $polymedco-blue;
+                        font-size: $title-font-size;
+                        padding-bottom: 30px;
+                    }
+
+                    &-subtitle
+                    {
+                        color: $light-blue;
+                        font-size: $subtitle-font-size;
+                        padding-bottom: 30px;
+                    }
+
+                    &-list
+                    {
+                        &-item
+                        {
+                            font-size: $subtitle-font-size;
+                        }   
+                    }
+                }
+            }
+        }
+
+        &__items
+        {
+            padding-top: 10%;
+            display: flex;
+            flex-direction: row;
+            align-content: center;
+            justify-content: space-evenly;
+            align-items: baseline;
+            width: 100%;
+            padding-left: 20px;
+            padding-right: 20px;
+
+            &-card
+            {
+                width: 33%;
+                margin-left: 15px;
+                margin-right: 15px;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                align-content: center;
+                justify-content: center;
+                padding: 50px;
+                transition: all 200ms ease-in-out;
+
+                &-title
+                {
+                    font-size: $breadcrumb-font-size;
+                    color: $polymedco-blue;
+                    font-weight: 500;
+                    text-align: center;
+                    margin-top: 50px;
+                }
+
+                &-subtitle
+                {
+                    margin-top: 30px;
+                    font-size: $subtitle-font-size;
+                    color: $black;
+                }
+
+                &:hover
+                {
+                    transform: scale(1.05);
+                }
+            }
+        }
+    }
+
+    .cards
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        overflow-x: hidden;
+
+        &-title
+        {
+            font-size: $big-submenu-title-font-size;
+            font-weight: 510;
+            margin-bottom: 10px;
+            width: 70%;
+            text-align: center;
+        }
+
+        &__block
+        {
+            width: 100%;
+            padding: 0 140px;
+            padding-top: 5%;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            align-content: center;
+            justify-content: space-evenly;
+            align-items: baseline;
+            padding-top: 5%;
+
+            &-container
+            {
+                display: flex;
+                flex-direction: column;
+                align-content: center;
+                justify-content: center;
+                align-items: center;
+                padding: 50px 50px;
+                transition: 300ms;
+
+                &-img
+                {
+                    width: 200px;
+                    height: auto;
+                    border-radius: 10px;
+                }
+
+                &-title
+                {
+                    font-weight: 500;
+                    margin-top: 10px;
+                }
+
+                &:hover
+                {
+                    transform: scale(1.05);
+                }
+            }
+        }
+
+        &__button
+        {
+            padding: 10px 20px;
+            border: 2px solid $light-blue;
+            margin: 100px 0 200px 0;
+            border-radius: 10px;
+            transition: 300ms;
+            cursor: pointer;
+
+            &-link
+            {
+                color: $light-blue;
+                font-weight: 500;
+            }
+
+            &:hover
+            {
+                background-color: $light-blue;
+
+                .cards__button-link
+                {
+                    color: $white;
+                }
+                
+            }
+        }
+    }
+}
+
+.polymedco-footer
+{
+    background-color: $light-blue;
+}
