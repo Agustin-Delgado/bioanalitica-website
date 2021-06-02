@@ -1,6 +1,6 @@
-.breadcrumb-polymedco
+.breadcrumb-eppendorf
 {
-    background-color: $light-blue;
+    background-color: $eppendorf-blue;
     padding: 20px 0;
     min-height: 40px;
     display: flex;
@@ -31,7 +31,7 @@
             &-link
             {
                 text-decoration: none;
-                color: $polymedco-blue;
+                color: $light-blue;
             }
         }
     }

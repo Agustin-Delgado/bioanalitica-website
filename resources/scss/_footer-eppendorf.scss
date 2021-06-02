@@ -1,11 +1,11 @@
-.polymedco-footer
+.eppendorf-footer
 {
-    background-color: $light-blue;
+    background-color: $eppendorf-blue;
 
-    .polymedco-footer
+    .eppendorf-footer
     {
         display: flex;
-        background-color: $light-blue;
+        background-color: $eppendorf-blue;
         padding: 40px 0;
         color: $white;
         text-align: center;
@@ -52,12 +52,12 @@
     }
 }
 
-.polymedco-copy
+.eppendorf-copy
 {
     display: flex;
     padding: 20px 0px 20px 0px;
     justify-content: center;
-    background-color: $copy-polymedco-blue;
+    background-color: $copy-eppendorf-blue;
 
     &__title
     {

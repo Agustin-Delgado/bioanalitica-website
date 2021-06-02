@@ -1,6 +1,6 @@
-.header-polymedco
+.header-eppendorf
 {
-    background-color: $light-blue;
+    background-color: $eppendorf-blue;
     display: flex;
 	position: sticky;
 	top: 0;
@@ -43,7 +43,7 @@
             }
         }
 
-        .navbar-polymedco
+        .navbar-eppendorf
         {
             padding: 0;
 
@@ -96,7 +96,7 @@
                     }
                     
                     
-                    .navbar-polymedco__drop
+                    .navbar-eppendorf__drop
                     {
 
                         &-submenu
@@ -127,7 +127,7 @@
   
                         &:hover
                         {
-                            .navbar-polymedco__drop-submenu
+                            .navbar-eppendorf__drop-submenu
                             {
                                 opacity: 1;
                                 visibility: visible;
@@ -160,7 +160,7 @@
 
                                     &:hover
                                     {
-                                        .navbar-polymedco__drop-submenu-item-sublist
+                                        .navbar-eppendorf__drop-submenu-item-sublist
                                         {
                                             opacity: 1;
                                             visibility: visible;
@@ -181,7 +181,7 @@
 
                                                 &-link
                                                 {
-                                                    color: $light-blue;
+                                                    color: $eppendorf-blue;
                                                     padding: 10px 20px;
                                                 }
                                             }
@@ -190,7 +190,7 @@
 
                                     &-link
                                     {
-                                        color: $light-blue;
+                                        color: $eppendorf-blue;
                                         padding: 10px 20px;
                                     }
                                 }
@@ -223,7 +223,7 @@
   
                         &:hover
                         {
-                            .navbar-polymedco__drop-submenus
+                            .navbar-eppendorf__drop-submenus
                             {
                                 opacity: 1;
                                 visibility: visible;
@@ -256,7 +256,7 @@
 
                                     &:hover
                                     {
-                                        .navbar-polymedco__drop-submenus-item-sublist
+                                        .navbar-eppendorf__drop-submenus-item-sublist
                                         {
                                             opacity: 1;
                                             visibility: visible;
@@ -277,7 +277,7 @@
 
                                                 &-link
                                                 {
-                                                    color: $light-blue;
+                                                    color: $eppendorf-blue;
                                                     padding: 10px 20px;
                                                 }
                                             }
@@ -286,7 +286,7 @@
 
                                     &-link
                                     {
-                                        color: $light-blue;
+                                        color: $eppendorf-blue;
                                         padding: 10px 20px;
                                     }
                                 }
