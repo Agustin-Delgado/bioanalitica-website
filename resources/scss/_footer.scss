@@ -6,7 +6,7 @@ footer
     {
         display: flex;
         background: $principal-orange;
-        padding-top: 40px;
+        padding: 40px 0;
         color: $white;
         text-align: center;
         flex-direction: column;
@@ -28,6 +28,7 @@ footer
         &-media
         {
             display: flex;
+            flex-direction: row;
             margin-bottom: 20px;
             margin-top: 40px;
 
@@ -47,27 +48,25 @@ footer
                 }
             }  
         }
-
-       .copy
-        {
-            width: 100%;
-            display: flex;
-            padding: 20px 0px 20px 0px;
-            justify-content: center;
-            background-color: $hard-orange;
-            margin-top: 40px;
-
-            &__title
-            {
-                color: $white;
-                font-size: $input-font-size;
-            }
-                
-            &__hard
-            {
-                font-weight: bolder;
-            }
-         } 
     }
 }
+
+.copy
+{
+    display: flex;
+    padding: 20px 0px 20px 0px;
+    justify-content: center;
+    background-color: $hard-orange;
+
+    &__title
+    {
+        color: $white;
+        font-size: $input-font-size;
+    }
+        
+    &__hard
+    {
+        font-weight: bolder;
+    }
+ } 
 

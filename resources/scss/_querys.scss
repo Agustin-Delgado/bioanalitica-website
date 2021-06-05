@@ -49,40 +49,44 @@
                     bottom: 15px;
                     left: 15px;
                     padding: 10px 0;
-                    background-color: #fff;
+                    background-color: $white;
                     overflow-y: auto;
                     transition: 0.3s;
 
-                    .navbar__menu-item-link
+                    &-item
                     {
-                        padding: 10px 20px;
                         font-size: 15px;
-                        color: rgb(255, 153, 0);
+                        padding: 10px 20px;
+
+                        &-link
+                        {
+                            color: rgb(255, 153, 0);
+                        }
                     }
 
                     .navbar__drop-submenus
                     {
-                        position: static;
+                        position: relative;
                         display: none;
                         margin: 10px 20px;
                         padding: 10px 0;
                         z-index: 99;
                         opacity: 1;
                         visibility: visible;
-                        background: #fff;
+                        background: $white;
                         box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
                     }
 
                     .navbar__drop-submenu
                     {
-                        position: static;
+                        position: relative;
                         display: none;
                         margin: 10px 20px;
                         padding: 10px 0;
                         z-index: 99;
                         opacity: 1;
                         visibility: visible;
-                        background: #fff;
+                        background: $white;
                         box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
                     }
                 }
