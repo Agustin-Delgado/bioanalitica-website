@@ -150,7 +150,21 @@
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
+        dynamicBullets: true,
                  },
+    });
+
+    var swiper = new Swiper(".mySwiperFour", {
+      slidesPerView: 1,
+      autoplay: true,
+      loop: true,
+      effect: "fade",
+
+      pagination: {
+        el: ".swiper-pagination",
+        dynamicBullets: true,
+        clickable: true,
+      },
     });
 
     var menu = ['Neurooncología', 'Base del craneo', 'Columna vertebral', 'Neurovascular', 'Funcional', 'Pediatría']
