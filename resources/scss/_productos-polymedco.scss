@@ -21,7 +21,6 @@
             height: auto;
             transform: translate(-50%,-50%);
             z-index: -1;
-            
         }
 
         &-title
@@ -109,7 +108,7 @@
             &-block
             {
                 width: 50%;
-                height: 800px;
+                height: auto;
                 display: flex;
                 flex-direction: column;
                 align-content: center;
@@ -161,6 +160,7 @@
             font-size: $big-submenu-title-font-size;
             font-weight: 510;
             margin-bottom: 50px;
+            text-align: center;
         }
 
         &-subtitle
@@ -189,7 +189,8 @@
                 padding: 0 100px;
                 margin: 0 50px;
                 background-color: $light-blue;
-                height: 300px;
+                height: auto;
+                min-height: 300px;
                 border-radius: 10px;
 
                 &-title
@@ -237,18 +238,19 @@
             align-content: center;
             justify-content: center;
             align-items: center;
-            width: 50%;
+            width: 90%;
             padding-bottom: 100px;
 
             &-title
             {
                 font-size: $title-font-size;
                 color: $polymedco-blue;
+                width: 50%;
             }
 
             &-img
             {
-                width: 100%;
+                width: 50%;
             }
         }
 
@@ -453,5 +455,5 @@
 
 .polymedco-footer
 {
-    background-color: $light-blue;
+    background-color: $white;
 }

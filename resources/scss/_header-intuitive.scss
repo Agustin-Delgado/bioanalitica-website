@@ -49,6 +49,11 @@
         .navbar-intuitive
         {
             padding: 0;
+            
+            .mobile__navbar-intuitive
+            {
+                display: none;
+            }
 
             .mobile-nav-toggle
             {
