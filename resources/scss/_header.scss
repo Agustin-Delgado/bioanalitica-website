@@ -23,15 +23,12 @@
 
         &-link
         {
-            width: min-content;
-            min-width: 275px;
-
+            max-width: 200px;
 
             &-logo
             {
-
                 vertical-align: middle;
-                width: 100%;
+                max-width: 30%;
                 min-width: 200px;
                 height: auto;
             }
@@ -40,6 +37,11 @@
         .navbar
         {
             padding: 0;
+
+            .mobile__navbar
+            {
+                display: none;
+            }
 
             .mobile-nav-toggle
             {

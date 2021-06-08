@@ -47,6 +47,11 @@
         {
             padding: 0;
 
+            .mobile__navbar-brookfield
+            {
+                display: none;
+            }
+
             .mobile-nav-toggle
             {
                 color: $white;

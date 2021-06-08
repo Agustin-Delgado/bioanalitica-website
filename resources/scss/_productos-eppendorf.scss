@@ -13,13 +13,14 @@
         &-video
         {
             position: fixed;
-            top: 50%;
+            top: 55%;
             left: 50%;
-            width: 120%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
             height: auto;
             transform: translate(-50%,-50%);
             z-index: -1;
-            
         }
 
         &-title
@@ -55,7 +56,6 @@
         align-content: center;
         justify-content: center;
         align-items: center;
-        overflow-x: hidden;
         padding: 12% 6%;    
 
         .product-description__title 
@@ -76,6 +76,7 @@
         &__row
         {   
             width: 70%;
+            background-color: $eppendorf-blue;
             display: flex;
             flex-direction: row;
             align-content: center;
@@ -86,8 +87,8 @@
 
             &-img
             {
-                height: 280px;
-                width: auto;
+                width: 50%;
+                height: 100%;
             }
 
             &-column
@@ -96,9 +97,8 @@
                 align-content: center;
                 justify-content: center;
                 align-items: center;
-                background-color: $eppendorf-blue;
-                height: 280px;
-                width: auto;
+                width: 50%;
+                height: 100%;
                 padding: 30px 30px;
 
                 &-text
@@ -415,7 +415,8 @@
                 padding: 6% 6%;
                 margin: 0 40px;
                 background-color: $white;
-                height: 410px;
+                height: auto;
+                min-height: 410px;
                 border-radius: 10px;
                 display: flex;
                 flex-direction: column;

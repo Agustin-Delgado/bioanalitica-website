@@ -35,31 +35,21 @@
     }
   
     /**
-     * Navbar links active state on scroll
-     */
-
-    
-  
-    /**
      * Mobile nav toggle
      */
     on('click', '.mobile-nav-toggle', function(e) {
       select('#navbar').classList.toggle('navbar-mobile')
       this.classList.toggle('bi-list')
       this.classList.toggle('bi-x')
-    })
-  
-    /**
-     * Mobile nav dropdowns activate
-     */
-    on('click', '.navbar .dropdown > a', function(e) {
+
+      on('click', 'li', function(e) {
       if (select('#navbar').classList.contains('navbar-mobile')) {
-        e.preventDefault()
-        this.nextElementSibling.classList.toggle('dropdown-active')
+        select('#navbar').classList.toggle('navbar-mobile')
+        select('.mobile-nav-toggle').classList.toggle('bi-list')
+        select('.mobile-nav-toggle').classList.toggle('bi-x')
       }
     }, true)
-
-
+    })
 
     on('click', '.mobile-nav-toggle', function(e) {
       select('#navbar').classList.toggle('navbar-intuitive-mobile')
@@ -100,6 +90,45 @@
       if (select('#navbar').classList.contains('navbar-bk-mobile')) {
         e.preventDefault()
         this.nextElementSibling.classList.toggle('dropdown-bk-active')
+      }
+    }, true)
+
+    on('click', '.mobile-nav-toggle', function(e) {
+      select('#navbar').classList.toggle('navbar-polymedco-mobile')
+      this.classList.toggle('bi-list')
+      this.classList.toggle('bi-x')
+    })
+  
+    on('click', '.navbar-polymedco .dropdown > a', function(e) {
+      if (select('#navbar').classList.contains('navbar-polymedco-mobile')) {
+        e.preventDefault()
+        this.nextElementSibling.classList.toggle('dropdown-polymedco-active')
+      }
+    }, true)
+
+    on('click', '.mobile-nav-toggle', function(e) {
+      select('#navbar').classList.toggle('navbar-eppendorf-mobile')
+      this.classList.toggle('bi-list')
+      this.classList.toggle('bi-x')
+    })
+  
+    on('click', '.navbar-eppendorf .dropdown > a', function(e) {
+      if (select('#navbar').classList.contains('navbar-eppendorf-mobile')) {
+        e.preventDefault()
+        this.nextElementSibling.classList.toggle('dropdown-eppendorf-active')
+      }
+    }, true)
+
+    on('click', '.mobile-nav-toggle', function(e) {
+      select('#navbar').classList.toggle('navbar-brookfield-mobile')
+      this.classList.toggle('bi-list')
+      this.classList.toggle('bi-x')
+    })
+  
+    on('click', '.navbar-brookfield .dropdown > a', function(e) {
+      if (select('#navbar').classList.contains('navbar-brookfield-mobile')) {
+        e.preventDefault()
+        this.nextElementSibling.classList.toggle('dropdown-brookfield-active')
       }
     }, true)
 
