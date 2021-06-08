@@ -1,6 +1,6 @@
-.polymedco-footer
+footer
 {
-    background-color: $light-blue;
+    background-color: $white;
 
     .polymedco-footer
     {
@@ -28,6 +28,7 @@
         &-media
         {
             display: flex;
+            flex-direction: row;
             margin-bottom: 20px;
             margin-top: 40px;
 
@@ -37,7 +38,7 @@
 
                 &-img
                 {
-                width: 20%;
+                width: 15%;
                 max-width: 300px;
                 }
 

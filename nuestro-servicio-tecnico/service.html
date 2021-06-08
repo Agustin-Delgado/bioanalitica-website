@@ -31,7 +31,6 @@
 <body>
     <!-- Inicio body -->
 
-
     <header data-aos="fade-down" class="header" id="header-active">
 
         <div class="header__contain">
@@ -40,12 +39,11 @@
 
                 <img src="../resources/images/image.png" class="header__contain-link-logo" alt="Logo"></a>
 
-            <nav class="navbar" id="navbar">
+            <nav class="navbar">
 
                 <ul class="navbar__menu">
 
-                    <li class="navbar__menu-item"><a class="navbar__menu-item-link"
-                            href="../index.html#inicio">Inicio</a></li>
+                    <li class="navbar__menu-item"><a class="navbar__menu-item-link" href="../index.html">Inicio</a></li>
 
                     <li class="navbar__menu-item navbar__drop"><a class="navbar__menu-item-link"
                             href="../index.html#productos">Productos <i class="bi bi-chevron-down"></i></a>
@@ -59,14 +57,14 @@
 
                                     <li class="navbar__drop-submenu-item-sublist-subitem"><a
                                             class="navbar__drop-submenu-item-sublist-subitem-link"
-                                            href="../productos-medicina/productos-intuitive.html#inicio">Intuitive</a>
+                                            href="../productos-medicina/productos-intuitive.html">Intuitive</a>
                                     </li>
                                     <li class="navbar__drop-submenu-item-sublist-subitem"><a
                                             class="navbar__drop-submenu-item-sublist-subitem-link"
-                                            href="../productos-medicina/productos-olympus.html#inicio">Olympus</a></li>
+                                            href="../productos-medicina/productos-olympus.html">Olympus</a></li>
                                     <li class="navbar__drop-submenu-item-sublist-subitem"><a
                                             class="navbar__drop-submenu-item-sublist-subitem-link"
-                                            href="../productos-medicina/productos-bk.html#inicio">Bk Medical</a></li>
+                                            href="../productos-medicina/productos-bk.html">Bk Medical</a></li>
 
                                 </ul>
 
@@ -85,7 +83,7 @@
                                             href="../productos-analitica/productos-eppendorf.html">Eppendorf</a></li>
                                     <li class="navbar__drop-submenus-item-sublist-subitem"><a
                                             class="navbar__drop-submenus-item-sublist-subitem-link"
-                                            href="">Brookfield</a></li>
+                                            href="../productos-analitica/productos-brookfield.html">Brookfield</a></li>
 
                                 </ul>
 
@@ -110,7 +108,64 @@
 
                 </ul>
 
-                <i class="bi bi-list mobile-nav-toggle"></i>
+                
+                <div id="navbar">
+
+                    <ul class="mobile__navbar">
+
+                        <div class="mobile__navbar-block">
+
+                            <li class="mobile__navbar-item"><a class="mobile__navbar-item-link"
+                                    href="./index.html#inicio">Inicio</a></li>
+
+                        </div>
+
+                        <div class="mobile__navbar-block">
+
+                            <li class="mobile__navbar-item"><a class="mobile__navbar-item-link"
+                                    href="./index.html#productos">Productos</a></li>
+                            <li class="mobile__navbar-item"><a class="mobile__navbar-item-link"
+                                    href="./productos-medicina/productos-intuitive.html">Intuitive</a>
+                            </li>
+                            <li class="mobile__navbar-item"><a class="mobile__navbar-item-link"
+                                    href="./productos-medicina/productos-olympus.html">Olympus</a>
+                            </li>
+                            <li class="mobile__navbar-item"><a class="mobile__navbar-item-link"
+                                    href="./productos-medicina/productos-bk.html">Bk Medical</a>
+                            </li>
+                            <li class="mobile__navbar-item"><a class="mobile__navbar-item-link"
+                                    href="./productos-analitica/productos-polymedco.html">Polymedco</a>
+                            </li>
+                            <li class="mobile__navbar-item"><a class="mobile__navbar-item-link"
+                                    href="./productos-analitica/productos-eppendorf.html">Eppendorf</a>
+                            </li>
+                            <li class="mobile__navbar-item"><a class="mobile__navbar-item-link"
+                                    href="./productos-analitica/productos-brookfield.html">Brookfield</a>
+                            </li>
+
+                        </div>
+
+                        <div class="mobile__navbar-block">
+
+                            <li class="mobile__navbar-item"><a class="mobile__navbar-item-link"
+                                    href="./index.html#service">Service</a></li>
+                            <li class="mobile__navbar-item"><a class="mobile__navbar-item-link"
+                                    href="./nuestro-servicio-tecnico/service.html">Nuestro servicio
+                                    tecnico</a></li>
+
+                        </div>
+
+                        <div class="mobile__navbar-block">
+
+                            <li class="mobile__navbar-item"><a class="mobile__navbar-item-link"
+                                    href="./index.html#contacto">Contacto</a>
+                            </li>
+                        </div>
+                    </ul>
+
+                    <i class="bi bi-list mobile-nav-toggle"></i>
+
+                </div>
 
             </nav>
 
@@ -129,7 +184,7 @@
 
     </section>
 
-    <main>
+    <main class="service-main">
 
         <section class="service-section">
 
@@ -250,23 +305,22 @@
 
             </div>
 
-            <!-- INICIO COPY --->
-
-            <div class="copy">
-
-                <p class="copy__title">© Copyright <strong class="copy__hard">Bioanalitica.</strong> All Rights Reserved
-                </p>
-
-            </div>
-
-            <!-- FIN COPY --->
-
         </section>
 
     </footer>
 
     <!-- FIN FOOTER --->
 
+    <!-- INICIO COPY --->
+
+    <div class="copy">
+
+        <p class="copy__title">© Copyright <strong class="copy__hard">Bioanalitica.</strong> All Rights Reserved
+        </p>
+
+    </div>
+
+    <!-- FIN COPY --->
 
 
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>

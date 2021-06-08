@@ -1,0 +1,72 @@
+.brookfield-footer
+{
+    background-color: $brookfield-blue;
+
+    .brookfield-footer
+    {
+        display: flex;
+        background-color: $brookfield-blue;
+        padding: 40px 0;
+        color: $white;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+
+        &__title
+        {
+            text-align: left;
+            font-size: $subtitle-font-size;
+        }
+
+        &__img
+        {
+            width: 20%;
+            margin-bottom: 50px;
+            min-width: 200px;    
+        }
+
+        &-media
+        {
+            display: flex;
+            margin-bottom: 20px;
+            margin-top: 40px;
+
+            &__content
+            {
+                margin: 20px 0px 20px 0px;
+
+                &-img
+                {
+                width: 15%;
+                max-width: 300px;
+                }
+
+                &-subtitle
+                {
+
+                    font-size: $social-font-size;
+
+                }
+            }   
+        }
+    }
+}
+
+.brookfield-copy
+{
+    display: flex;
+    padding: 20px 0px 20px 0px;
+    justify-content: center;
+    background-color: $copy-brookfield-blue;
+
+    &__title
+    {
+        color: $white;
+        font-size: $input-font-size;
+    }
+    
+    &__hard
+    {
+        font-weight: bolder;
+    }
+}

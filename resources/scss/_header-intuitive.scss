@@ -49,6 +49,11 @@
         .navbar-intuitive
         {
             padding: 0;
+            
+            .mobile__navbar-intuitive
+            {
+                display: none;
+            }
 
             .mobile-nav-toggle
             {
@@ -138,7 +143,7 @@
                                 flex-direction: column;
                                 align-items: center;
                                 box-shadow: $heavy-shadow;
-                                width: 223px;
+                                width: 195%;
                                 height: auto;
                                 justify-content: center;
                                 border-radius: 10px;
@@ -154,7 +159,7 @@
                                         position: absolute;
                                         background-color: $hard-orange;
                                         top: 0;
-                                        left: 100%;
+                                        left: 95%;
                                         visibility: hidden;
                                         opacity: 0;
                                         transition: visibility 0s, opacity 100ms linear;
@@ -250,7 +255,7 @@
                                         position: absolute;
                                         background-color: $hard-orange;
                                         top: 50%;
-                                        left: 100%;
+                                        left: 95%;
                                         visibility: hidden;
                                         opacity: 0;
                                         transition: visibility 0s, opacity 100ms linear;
