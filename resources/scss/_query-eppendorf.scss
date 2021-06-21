@@ -1,0 +1,744 @@
+@media (max-width: 480px) 
+{
+    .header-eppendorf
+    {
+        &__contain
+        {
+            margin-right: 5%;
+            margin-left: 5%;
+
+            &-link
+            {
+                min-width: 0;
+                
+                &-duo
+                {
+                    margin: 0;
+                }
+            }
+            .navbar-eppendorf
+            {
+                justify-content: flex-end;
+
+                .navbar-eppendorf__menu
+                {
+                    display: none; 
+                }
+                
+                .mobile-nav-toggle
+                {
+                    display: block;
+                }
+            }
+
+            .navbar-mobile 
+            {
+                display: flex;
+                position: fixed;
+                overflow: hidden;
+                top: 0;
+                right: 0;
+                left: 0;
+                bottom: 0;
+                background: rgba(23, 35, 46, 0.9);
+                transition: 0.3s;
+                z-index: 999;
+
+                .mobile-nav-toggle 
+                {
+                    position: absolute;
+                    top: 15px;
+                    right: 15px;
+                }
+
+                .mobile__navbar-eppendorf
+                {
+                    display: flex;
+                    flex-direction: column;
+                    align-content: center;
+                    justify-content: flex-start;
+                    align-items: center;
+                    position: absolute;
+                    top: 55px;
+                    right: 15px;
+                    bottom: 15px;
+                    left: 15px;
+                    padding: 10px 0;
+                    background-color: $white;
+                    overflow-y: auto;
+                    transition: 0.3s;
+
+                    &-item
+                    {
+                        font-size: 15px;
+                        padding: 10px 20px;
+
+                        &-link
+                        {
+                            color: $eppendorf-blue;
+                            justify-content: center;
+                            font-weight: 500;
+                            margin-bottom: 5px;
+                        }
+                    }
+
+                    &-block
+                    {
+                        box-shadow: $heavy-shadow;
+                        width: 90%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        margin: 10px 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .hero-eppendorf
+    {
+        &__contain
+        {
+            &-title
+            {
+                font-size: $title-font-size;
+            }
+    
+            &-subtitle
+            {
+                font-size: $subtitle-font-size;
+            }
+        }
+    }
+
+    .eppendorf-main
+    {
+        .product-description
+        { 
+
+            .product-description__title 
+            {
+                font-size: $title-font-size;
+            }
+
+            &__subtitle
+            {
+                font-size: $social-font-size;
+            }
+
+            &__row
+            {   
+                width: 90%;
+                display: flex;
+                flex-direction: column;
+                align-content: center;
+                justify-content: center;
+                align-items: center;
+                margin-top: 6%;
+                transition: 200ms ease-in-out;
+    
+                &-img
+                {
+                    width: 90%;
+                }
+    
+                &-column
+                {
+                    width: 90%;
+                    height: 100%;
+                    padding: 20px 10px;
+                }
+            }
+        }
+
+        .components
+        {
+            .components-title
+            {
+                font-size: $small-title-font-size;
+                width: 90%;
+            }
+
+            &-subtitle
+            {
+                font-size: $subtitle-font-size;
+                width: 90%;
+            }
+            
+            .products
+            {
+                width: 100%;
+                padding: 20px 0;
+
+                &__text
+                {
+                    text-align: center;
+                }
+
+                &__row
+                {
+                    display: flex;
+                    flex-direction: column;
+                    align-content: center;
+                    justify-content: space-around;
+                    align-items: center;
+                    padding-top: 6%;
+                    width: 100%;
+
+                    &-column
+                    {
+                        position: relative;
+                        width: 90%;
+                        display: flex;
+                        margin-bottom: 50px;
+
+                        &-img
+                        {
+                            width: 100%;
+                            border-top-left-radius: 10px;
+                            border-top-right-radius: 10px;
+                        }
+
+                        &-title
+                        {
+                            color: $eppendorf-blue;
+                            padding: 20px 20px;
+                            font-weight: 500;
+                            font-size: $subtitle-font-size;
+                        } 
+
+                        &-hover
+                        {
+                            &-subtitle
+                            {
+                                font-size: $small-subtitle-text;
+                            }
+                        }     
+
+                        &:hover
+                        {
+                            .products__row-column-hover
+                            {
+                                &-subtitle
+                                {
+                                    font-size: $small-subtitle-text;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .standarized
+        {
+            .standarized-title
+            {
+                font-size: $title-font-size;
+                text-align: center;
+            }
+
+            &-subtitle
+            {
+                font-size: $small-title-font-size;
+                text-align: center;
+                margin-bottom: 30px;
+            }
+
+            &__products
+            {
+                width: 100%;
+                padding: 10px 10px;
+
+                &-text
+                {
+                    font-size: $subtitle-font-size;
+                    width: 100%;
+                    margin-bottom: 30px;
+                }
+
+                &-row
+                {
+                    flex-direction: column;
+
+                    &-column
+                    {
+                        width: 90%;
+                        height: auto;
+                        margin-bottom: 50px;
+
+                        &-title
+                        {
+                            padding: 0;
+                            margin-bottom: 30px;
+                        }
+
+                        &-subtitle
+                        {
+                            padding: 0;
+                        }
+                    }
+                }
+            }
+        }
+        
+        .reasons
+        {
+            .reasons-title
+            {
+                font-size: $title-font-size;
+            }
+
+            &-subtitle
+            {
+                font-size: $subtitle-font-size;
+                text-align: center;
+                margin-bottom: 50px;
+            }
+            
+            &__row
+            {
+                flex-direction: column;
+
+                &-img
+                {
+                    width: 90%;
+                    margin: 0;
+                }
+
+                &-column
+                {
+                    margin: 100px 0;
+                    width: 100%;
+
+                    &-title
+                    {
+                        text-align: center;
+                        font-size: $small-title-font-size;
+                        margin-bottom: 50px;
+                    }
+                }
+            }
+        }
+        
+
+        .cards
+        {
+            &-title
+            {
+                font-size: $title-font-size;
+                width: 100%;
+            }
+        }
+    }
+
+    .breadcrumb-eppendorf
+    {
+        flex-direction: column;
+
+        &__title
+        {
+            padding-left: 0; 
+        }
+
+        &__section
+        {
+            padding-right: 0; 
+        }
+    }
+
+    .eppendorf-footer
+    {
+        background-color: $eppendorf-blue;
+
+        .eppendorf-footer
+        {
+            &-media
+            {
+                flex-direction: column; 
+            }
+        }
+    }
+
+    .eppendorf-copy
+    {
+        &__title
+        {
+            text-align: center;
+        }
+    }
+}
+
+
+@media (min-width: 481px) and (max-width: 1023px)
+{
+    .header-eppendorf
+    {
+        &__contain
+        {
+            margin-right: 5%;
+            margin-left: 5%;
+
+            &-link
+            {
+                min-width: 0;
+                
+                &-duo
+                {
+                    margin: 0;
+                }
+            }
+            .navbar-eppendorf
+            {
+                justify-content: flex-end;
+
+                .navbar-eppendorf__menu
+                {
+                    display: none; 
+                }
+                
+                .mobile-nav-toggle
+                {
+                    display: block;
+                }
+            }
+
+            .navbar-mobile 
+            {
+                display: flex;
+                position: fixed;
+                overflow: hidden;
+                top: 0;
+                right: 0;
+                left: 0;
+                bottom: 0;
+                background: rgba(23, 35, 46, 0.9);
+                transition: 0.3s;
+                z-index: 999;
+
+                .mobile-nav-toggle 
+                {
+                    position: absolute;
+                    top: 15px;
+                    right: 15px;
+                }
+
+                .mobile__navbar-eppendorf
+                {
+                    display: flex;
+                    flex-direction: column;
+                    align-content: center;
+                    justify-content: flex-start;
+                    align-items: center;
+                    position: absolute;
+                    top: 55px;
+                    right: 15px;
+                    bottom: 15px;
+                    left: 15px;
+                    padding: 10px 0;
+                    background-color: $white;
+                    overflow-y: auto;
+                    transition: 0.3s;
+
+                    &-item
+                    {
+                        font-size: 15px;
+                        padding: 10px 20px;
+
+                        &-link
+                        {
+                            color: $eppendorf-blue;
+                            justify-content: center;
+                            font-weight: 500;
+                            margin-bottom: 5px;
+                        }
+                    }
+
+                    &-block
+                    {
+                        box-shadow: $heavy-shadow;
+                        width: 90%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        margin: 10px 0;
+                    }
+                }
+            }
+        }
+    }
+    
+    .hero-eppendorf
+    {
+        &__contain
+        {
+            &-title
+            {
+                font-size: $big-title-font-size;
+            }
+    
+            &-subtitle
+            {
+                font-size: $breadcrumb-font-size;
+            }
+        }
+    }
+
+    .eppendorf-main
+    {
+        .product-description
+        { 
+
+            .product-description__title 
+            {
+                font-size: $title-font-size;
+            }
+
+            &__subtitle
+            {
+                font-size: $social-font-size;
+            }
+
+            &__row
+            {   
+                width: 90%;
+                display: flex;
+                flex-direction: column;
+                align-content: center;
+                justify-content: center;
+                align-items: center;
+                margin-top: 6%;
+                transition: 200ms ease-in-out;
+    
+                &-img
+                {
+                    width: 90%;
+                }
+    
+                &-column
+                {
+                    width: 90%;
+                    height: 100%;
+                    padding: 20px 10px;
+                }
+            }
+        }
+
+        .components
+        {
+            .components-title
+            {
+                font-size: $small-title-font-size;
+                width: 90%;
+            }
+
+            &-subtitle
+            {
+                font-size: $subtitle-font-size;
+                width: 90%;
+            }
+            
+            .products
+            {
+                width: 100%;
+                padding: 20px 0;
+
+                &__text
+                {
+                    text-align: center;
+                }
+
+                &__row
+                {
+                    display: flex;
+                    flex-direction: column;
+                    align-content: center;
+                    justify-content: space-around;
+                    align-items: center;
+                    padding-top: 6%;
+                    width: 100%;
+
+                    &-column
+                    {
+                        position: relative;
+                        width: 90%;
+                        display: flex;
+                        margin-bottom: 50px;
+
+                        &-img
+                        {
+                            width: 100%;
+                            border-top-left-radius: 10px;
+                            border-top-right-radius: 10px;
+                        }
+
+                        &-title
+                        {
+                            color: $eppendorf-blue;
+                            padding: 20px 20px;
+                            font-weight: 500;
+                            font-size: $subtitle-font-size;
+                        } 
+
+                        &-hover
+                        {
+                            &-subtitle
+                            {
+                                font-size: $subtitle-font-size;
+                            }
+                        }     
+
+                        &:hover
+                        {
+                            .products__row-column-hover
+                            {
+                                &-subtitle
+                                {
+                                    font-size: $subtitle-font-size;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .standarized
+        {
+            .standarized-title
+            {
+                font-size: $title-font-size;
+                text-align: center;
+            }
+
+            &-subtitle
+            {
+                font-size: $small-title-font-size;
+                text-align: center;
+                margin-bottom: 30px;
+            }
+
+            &__products
+            {
+                width: 100%;
+                padding: 10px 10px;
+
+                &-text
+                {
+                    font-size: $subtitle-font-size;
+                    width: 100%;
+                    margin-bottom: 30px;
+                }
+
+                &-row
+                {
+                    flex-direction: column;
+
+                    &-column
+                    {
+                        width: 90%;
+                        height: auto;
+                        margin-bottom: 50px;
+
+                        &-title
+                        {
+                            padding: 0;
+                            margin-bottom: 30px;
+                        }
+
+                        &-subtitle
+                        {
+                            padding: 0;
+                        }
+                    }
+                }
+            }
+        }
+        
+        .reasons
+        {
+            .reasons-title
+            {
+                font-size: $title-font-size;
+            }
+
+            &-subtitle
+            {
+                font-size: $subtitle-font-size;
+                text-align: center;
+                margin-bottom: 50px;
+            }
+            
+            &__row
+            {
+                flex-direction: column;
+
+                &-img
+                {
+                    width: 90%;
+                    margin: 0;
+                }
+
+                &-column
+                {
+                    margin: 100px 0;
+                    width: 100%;
+
+                    &-title
+                    {
+                        text-align: center;
+                        font-size: $small-title-font-size;
+                        margin-bottom: 50px;
+                    }
+                }
+            }
+        }
+        
+
+        .cards
+        {
+            &-title
+            {
+                font-size: $title-font-size;
+                width: 100%;
+            }
+        }
+    }
+
+    .breadcrumb-eppendorf
+    {
+        flex-direction: column;
+
+        &__title
+        {
+            padding-left: 0; 
+        }
+
+        &__section
+        {
+            padding-right: 0; 
+        }
+    }
+
+    .eppendorf-footer
+    {
+        background-color: $eppendorf-blue;
+
+        .eppendorf-footer
+        {
+            &-media
+            {
+                flex-direction: column; 
+            }
+        }
+    }
+
+    .eppendorf-copy
+    {
+        &__title
+        {
+            text-align: center;
+        }
+    }
+}

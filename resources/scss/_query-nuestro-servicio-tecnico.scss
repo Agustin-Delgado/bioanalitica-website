@@ -1,0 +1,100 @@
+@media (max-width: 991px)
+{
+    .service-main{
+
+        .service-section
+        {
+            &__text
+            {
+                &-title
+                {
+                    font-size: $small-title-font-size;
+                }
+            
+                &-subtitle
+                {
+                    font-size: $social-font-size;
+                }
+            }
+
+            &__container
+            {
+                flex-direction: column;
+
+                &-card
+                {
+                    width: 300px;
+                    max-width: 250px;
+                    height: auto;
+                    padding: 30px 30px;
+
+                    &-img
+                    {
+                        width: 100%;
+                        height: auto;
+                        max-width: 250px;
+                    }
+
+                    .anmat
+                    {
+                        width: 100%;
+                        height: auto;
+                        max-width: 250px;
+                    }
+                }
+            }
+        }
+
+        .filosofia
+        {
+
+            &__subtitle
+            {
+                width: 90%;
+                font-size: $social-font-size;
+            }
+
+            .swiper-container
+            {
+                border-radius: 10px;
+                
+                .swiper-wrapper
+                {
+                    .swiper-slide
+                    {
+                        padding: 20px 20px;
+                        height: auto;
+
+                        &__title
+                        {
+                            font-size: $breadcrumb-font-size;
+                        }
+                
+                        &__subtitle
+                        {
+                            width: 100%;
+                            font-size: $nav-font-size;
+                        }
+                    }
+                }
+            }
+        }
+        
+        .breadcrumb-service
+        {
+            flex-direction: column;
+    
+            &__title
+            {
+                padding-left: 0; 
+                text-align: center;
+            }
+    
+            &__section
+            {
+                padding-right: 0; 
+            }
+        }
+    }
+    
+}

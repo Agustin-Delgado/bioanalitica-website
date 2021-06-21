@@ -23,12 +23,14 @@
 
         &-link
         {
-            max-width: 200px;
+            max-width: 20%;
+            min-width: 200px;
+            height: auto;
 
             &-logo
             {
                 vertical-align: middle;
-                max-width: 30%;
+                max-width: 100%;
                 min-width: 200px;
                 height: auto;
             }
