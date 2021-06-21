@@ -1,0 +1,708 @@
+@media (max-width: 480px) 
+{
+    .header-olympus
+    {
+        &__contain
+        {
+            margin-right: 5%;
+            margin-left: 5%;
+
+            &-link
+            {
+                min-width: 0;
+                
+                &-duo
+                {
+                    margin: 0;
+                }
+            }
+
+            .navbar-olympus
+            {
+                justify-content: flex-end;
+
+                .navbar-olympus__menu
+                {
+                    display: none; 
+                }
+                
+                .mobile-nav-toggle
+                {
+                    display: block;
+                }
+            }
+
+            .navbar-mobile 
+            {
+                display: flex;
+                position: fixed;
+                overflow: hidden;
+                top: 0;
+                right: 0;
+                left: 0;
+                bottom: 0;
+                background: rgba(23, 35, 46, 0.9);
+                transition: 0.3s;
+                z-index: 999;
+
+                .mobile-nav-toggle 
+                {
+                    position: absolute;
+                    top: 15px;
+                    right: 15px;
+                }
+
+                .mobile__navbar-olympus
+                {
+                    display: flex;
+                    flex-direction: column;
+                    align-content: center;
+                    justify-content: flex-start;
+                    align-items: center;
+                    position: absolute;
+                    top: 55px;
+                    right: 15px;
+                    bottom: 15px;
+                    left: 15px;
+                    padding: 10px 0;
+                    background-color: $white;
+                    overflow-y: auto;
+                    transition: 0.3s;
+
+                    &-item
+                    {
+                        font-size: 15px;
+                        padding: 10px 20px;
+
+                        &-link
+                        {
+                            color: $blue;
+                            justify-content: center;
+                            font-weight: 500;
+                            margin-bottom: 5px;
+                        }
+                    }
+
+                    &-block
+                    {
+                        box-shadow: $heavy-shadow;
+                        width: 90%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        margin: 10px 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .olympus-main
+    {
+        .product-description
+        {
+            .product-description__head
+            {
+                padding-top: 20%;
+                padding-bottom: 12%;
+                width: 90%;
+
+                .product-description__head-title
+                {
+                    font-size: $small-title-font-size;
+                    text-align: center;
+                }
+
+                .product-description__head-subtitle
+                {
+                    font-size: $subtitle-font-size;
+                    text-align: center;
+                }
+            
+            }
+
+            .product-description__block
+            {
+                flex-direction: column;
+                padding: 0;
+                padding-top: 12%;
+                padding-bottom: 12%;
+
+                .product-description__block-img
+                {
+                    height: auto;
+                    width: 50%;
+                    min-width: 250px;
+                }
+
+                .product-description__block-contain
+                {
+                    width: 90%;
+                
+                    .product-description__block-contain-title
+                    {
+                        text-align: center;
+                        font-size: $small-title-font-size;
+
+                    }
+                    .product-description__block-contain-subtitle
+                    {
+                        text-align: center;
+                    }
+                    .product-description__block-contain-list
+                    {
+                        font-size: $subtitle-font-size;
+                        font-weight: 400;
+                        padding: 20px 0px;
+
+                        .product-description__block-contain-item
+                        {
+                            font-size: $subtitle-font-size;
+                            font-weight: 400;
+                        }
+                    }
+                }
+            }
+        }
+
+        .components
+        {
+            padding-top: 20%;
+            padding-bottom: 20%;
+
+            .components-title
+            {
+                font-size: $title-font-size;
+                margin-bottom: 20px;
+                text-align: center;
+            }
+
+            .components__row
+            {
+                padding-top: 10%;
+                flex-direction: column;
+                padding-right: 0;
+                padding-left: 0;
+
+                .components__row-card
+                {
+                    width: 90%;
+                    margin-bottom: 20px;
+                    padding: 20px 20px;
+                    margin-left: 0;
+                    margin-right: 0;
+
+                    .components__row-card-title
+                    {
+                        text-align: center;
+
+                    }
+
+                    .components__row-card-subtitle
+                    {
+                        text-align: center;
+                    }
+
+                    &:hover
+                    {
+                        transform: scale(1.05);
+                    }
+                }
+            }
+        }
+
+        .standarized
+        {
+            padding-top: 20%;
+
+            .standarized-title
+            {
+                font-size: $title-font-size;
+                margin-bottom: 20px;
+                
+            }
+            .standarized-subtitle
+            {
+                font-size: $subtitle-font-size;
+                text-align: center;
+                width: 90%;
+            }
+            .swiper-container {
+                width: 100%;
+                height: 100%;
+            }
+        
+            .swiper-slide {
+
+                height: 500px;
+
+                &-title
+                {
+                    padding-bottom: 20px;
+                    font-size: $small-title-font-size;
+                    margin: 0;
+                }
+
+                &-list
+                {
+                    padding: 20px 10px;
+
+                }
+            }
+        }
+
+        .cards
+        {
+            padding-top: 20%;
+
+            &-title
+            {
+                font-size: $small-title-font-size;
+                margin-bottom: 20px;
+                width: 90%;
+            }
+
+            &__block
+            {
+                padding: 0;
+                padding-top: 10%;
+                flex-direction: column;
+                padding-top: 10%;
+            }
+        }
+    }
+
+    .breadcrumb-olympus
+    {
+        flex-direction: column;
+
+        &__title
+        {
+            padding-left: 0; 
+        }
+
+        &__section
+        {
+            padding-right: 0; 
+        }
+    }
+
+
+    .olympus-footer
+    {
+        .olympus-footer
+        {
+            display: flex;
+            background: $blue;
+            padding: 40px 0;
+            color: $white;
+            text-align: center;
+            flex-direction: column;
+            align-items: center;
+
+            &__title
+            {
+                text-align: left;
+                font-size: $subtitle-font-size;
+            }
+
+            &__img
+            {
+                width: 20%;
+                margin-bottom: 50px;
+                min-width: 200px;    
+            }
+
+            &-media
+            {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 20px;
+                margin-top: 40px;
+
+                &__content
+                {
+                    margin: 20px 0px 20px 0px;
+
+                    &-img
+                    {
+                    width: 20%;
+                    max-width: 300px;
+                    }
+
+                    &-subtitle
+                    {
+
+                        font-size: $social-font-size;
+
+                    }
+                }   
+            }
+        }
+    }
+
+    .olympus-copy
+    {
+
+        &__title
+        {
+            text-align: center;
+        }
+    }
+}
+
+@media (min-width: 481px) and (max-width: 1023px)
+{
+    .header-olympus
+    {
+        &__contain
+        {
+            margin-right: 5%;
+            margin-left: 5%;
+
+            &-link
+            {
+                min-width: 0;
+                
+                &-duo
+                {
+                    margin: 0;
+                }
+            }
+
+            .navbar-olympus
+            {
+                justify-content: flex-end;
+
+                .navbar-olympus__menu
+                {
+                    display: none; 
+                }
+                
+                .mobile-nav-toggle
+                {
+                    display: block;
+                }
+            }
+
+            .navbar-mobile 
+            {
+                display: flex;
+                position: fixed;
+                overflow: hidden;
+                top: 0;
+                right: 0;
+                left: 0;
+                bottom: 0;
+                background: rgba(23, 35, 46, 0.9);
+                transition: 0.3s;
+                z-index: 999;
+
+                .mobile-nav-toggle 
+                {
+                    position: absolute;
+                    top: 15px;
+                    right: 15px;
+                }
+
+                .mobile__navbar-olympus
+                {
+                    display: flex;
+                    flex-direction: column;
+                    align-content: center;
+                    justify-content: flex-start;
+                    align-items: center;
+                    position: absolute;
+                    top: 55px;
+                    right: 15px;
+                    bottom: 15px;
+                    left: 15px;
+                    padding: 10px 0;
+                    background-color: $white;
+                    overflow-y: auto;
+                    transition: 0.3s;
+
+                    &-item
+                    {
+                        font-size: 15px;
+                        padding: 10px 20px;
+
+                        &-link
+                        {
+                            color: $blue;
+                            justify-content: center;
+                            font-weight: 500;
+                            margin-bottom: 5px;
+                        }
+                    }
+
+                    &-block
+                    {
+                        box-shadow: $heavy-shadow;
+                        width: 90%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        margin: 10px 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .olympus-main
+    {
+        .product-description
+        {
+            .product-description__head
+            {
+                padding-top: 20%;
+                padding-bottom: 12%;
+                width: 90%;
+
+                .product-description__head-title
+                {
+                    font-size: $title-font-size;
+                    text-align: center;
+                }
+
+                .product-description__head-subtitle
+                {
+                    font-size: $subtitle-font-size;
+                    text-align: center;
+                }
+            
+            }
+
+            .product-description__block
+            {
+                flex-direction: column;
+                padding: 0;
+                padding-top: 12%;
+                padding-bottom: 12%;
+
+                .product-description__block-img
+                {
+                    height: auto;
+                    width: 100%;
+                    min-width: 450px;
+                    margin: 80px 0;
+                }
+
+                .product-description__block-contain
+                {
+                    width: 90%;
+                    align-items: center;
+                
+                    .product-description__block-contain-title
+                    {
+                        text-align: center;
+                        font-size: $title-font-size;
+
+                    }
+                    .product-description__block-contain-subtitle
+                    {
+                        text-align: center;
+                    }
+                    .product-description__block-contain-list
+                    {
+                        font-size: $subtitle-font-size;
+                        font-weight: 400;
+                        padding: 20px 0px;
+
+                        .product-description__block-contain-item
+                        {
+                            font-size: $subtitle-font-size;
+                            font-weight: 400;
+                        }
+                    }
+                }
+            }
+        }
+
+        .components
+        {
+            padding-top: 20%;
+            padding-bottom: 20%;
+
+            .components-title
+            {
+                font-size: $title-font-size;
+                margin-bottom: 20px;
+                text-align: center;
+            }
+
+            .components__row
+            {
+                padding-top: 10%;
+                flex-direction: column;
+                padding-right: 0;
+                padding-left: 0;
+
+                .components__row-card
+                {
+                    width: 90%;
+                    margin-bottom: 20px;
+                    padding: 20px 20px;
+                    margin-left: 0;
+                    margin-right: 0;
+
+                    .components__row-card-title
+                    {
+                        text-align: center;
+
+                    }
+
+                    .components__row-card-subtitle
+                    {
+                        text-align: center;
+                    }
+
+                    &:hover
+                    {
+                        transform: scale(1.05);
+                    }
+                }
+            }
+        }
+
+        .standarized
+        {
+            padding-top: 20%;
+
+            .standarized-title
+            {
+                font-size: $title-font-size;
+                margin-bottom: 20px;
+                
+            }
+            .standarized-subtitle
+            {
+                font-size: $subtitle-font-size;
+                text-align: center;
+                width: 90%;
+            }
+            .swiper-container {
+                width: 100%;
+                height: 100%;
+            }
+        
+            .swiper-slide {
+
+                height: 500px;
+
+                &-title
+                {
+                    padding-bottom: 20px;
+                    font-size: $title-font-size;
+                    margin: 0;
+                }
+
+                &-list
+                {
+                    padding: 20px 10px;
+
+                }
+            }
+        }
+
+        .cards
+        {
+            padding-top: 20%;
+
+            &-title
+            {
+                font-size: $title-font-size;
+                margin-bottom: 20px;
+                width: 90%;
+            }
+
+            &__block
+            {
+                padding: 0;
+                padding-top: 10%;
+                flex-direction: column;
+                padding-top: 10%;
+            }
+        }
+    }
+
+    .breadcrumb-olympus
+    {
+        flex-direction: column;
+
+        &__title
+        {
+            padding-left: 0; 
+        }
+
+        &__section
+        {
+            padding-right: 0; 
+        }
+    }
+
+
+    .olympus-footer
+    {
+        .olympus-footer
+        {
+            display: flex;
+            background: $blue;
+            padding: 40px 0;
+            color: $white;
+            text-align: center;
+            flex-direction: column;
+            align-items: center;
+
+            &__title
+            {
+                text-align: left;
+                font-size: $subtitle-font-size;
+            }
+
+            &__img
+            {
+                width: 20%;
+                margin-bottom: 50px;
+                min-width: 200px;    
+            }
+
+            &-media
+            {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 20px;
+                margin-top: 40px;
+
+                &__content
+                {
+                    margin: 20px 0px 20px 0px;
+
+                    &-img
+                    {
+                    width: 20%;
+                    max-width: 300px;
+                    }
+
+                    &-subtitle
+                    {
+
+                        font-size: $social-font-size;
+
+                    }
+                }   
+            }
+        }
+    }
+
+    .olympus-copy
+    {
+
+        &__title
+        {
+            text-align: center;
+        }
+    }
+}
+

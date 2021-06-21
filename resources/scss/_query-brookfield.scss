@@ -1,0 +1,687 @@
+@media (max-width: 480px) 
+{
+    .header-brookfield
+    {
+        &__contain
+        {
+            margin-right: 5%;
+            margin-left: 5%;
+
+            &-link
+            {
+                min-width: 0;
+                
+                &-duo
+                {
+                    margin: 0;
+                }
+            }
+            .navbar-brookfield
+            {
+                justify-content: flex-end;
+
+                .navbar-brookfield__menu
+                {
+                    display: none; 
+                }
+                
+                .mobile-nav-toggle
+                {
+                    display: block;
+                }
+            }
+
+            .navbar-mobile 
+            {
+                display: flex;
+                position: fixed;
+                overflow: hidden;
+                top: 0;
+                right: 0;
+                left: 0;
+                bottom: 0;
+                background: rgba(23, 35, 46, 0.9);
+                transition: 0.3s;
+                z-index: 999;
+
+                .mobile-nav-toggle 
+                {
+                    position: absolute;
+                    top: 15px;
+                    right: 15px;
+                }
+
+                .mobile__navbar-brookfield
+                {
+                    display: flex;
+                    flex-direction: column;
+                    align-content: center;
+                    justify-content: flex-start;
+                    align-items: center;
+                    position: absolute;
+                    top: 55px;
+                    right: 15px;
+                    bottom: 15px;
+                    left: 15px;
+                    padding: 10px 0;
+                    background-color: $white;
+                    overflow-y: auto;
+                    transition: 0.3s;
+
+                    &-item
+                    {
+                        font-size: 15px;
+                        padding: 10px 20px;
+
+                        &-link
+                        {
+                            color: $brookfield-blue;
+                            justify-content: center;
+                            font-weight: 500;
+                            margin-bottom: 5px;
+                        }
+                    }
+
+                    &-block
+                    {
+                        box-shadow: $heavy-shadow;
+                        width: 90%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        margin: 10px 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .brookfield-main
+    {
+        .product-description
+        {
+            .product-description__title 
+            {
+                margin-bottom: 50px;
+                font-size: $title-font-size;
+            }
+        }
+
+        .components
+        {
+            .components-title
+            {
+                font-size: $breadcrumb-font-size;
+                width: 100%;
+            }
+
+            &-subtitle
+            {
+                font-size: $subtitle-font-size;
+                width: 100%;
+            }
+            
+            .products
+            {
+                width: 100%;
+                padding: 0;
+
+                &__title
+                {
+                    padding: 0;
+                    font-size: $breadcrumb-font-size;
+                    margin-bottom: 50px;
+                    padding: 10px 10px;
+                }
+
+                &__subtitle
+                {
+                    padding: 0;
+                    text-align: center;
+                    margin-bottom: 40px;
+                    font-size: $social-font-size;
+                    padding: 10px 10px;
+                }
+
+                .swiper-container
+                {
+                    width: 100%;
+                    height: auto;
+
+                    .swiper-wrapper
+                    {
+                        .swiper-slide
+                        {
+                            height: 2600px;
+                            border-radius: 10px;
+                            padding: 0;
+
+                            .products__row
+                            {
+                                flex-direction: column;
+
+                                &-img
+                                {
+                                    width: 100%;
+                                    height: auto;
+                                    max-width: 300px;
+                                    margin: 0;
+                                }
+
+                                &-column
+                                {
+                                    width: 90%;
+                                }
+
+                                &-list
+                                {
+                                    &-item
+                                    {
+                                        font-size: $social-font-size;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .standarized
+        {
+            .standarized-title
+            {
+                font-size: $small-title-font-size;
+                text-align: center;
+            }
+
+            &-subtitle
+            {
+                font-size: $subtitle-font-size;
+                text-align: center;
+            }
+
+            &__products
+            {
+                &-row
+                {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    align-items: center;
+                    align-content: center;
+
+                    &-column
+                    {
+                        width: 90%;
+                        padding: 10px 10px;
+                        margin-bottom: 50px;
+
+                        &-img
+                        {
+                            width: 100%;
+                            padding: 50px 50px;
+                            max-width: 300px;
+                        }
+
+                        &-title
+                        {
+                            padding: 20px 20px;
+                            font-size: $breadcrumb-font-size;
+                            text-align: center;
+                            font-weight: 500;
+                        }
+
+                        &-subtitle
+                        {
+                            padding: 20px 20px;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+        
+        .reasons
+        {
+            .reasons-title
+            {
+                font-size: $small-title-font-size;
+            }
+
+            &-subtitle
+            {
+                font-size: $subtitle-font-size;
+                text-align: center;
+            }
+            
+            &__row
+            {
+                flex-direction: column;
+
+                &-column
+                {
+                    padding: 6% 6%;
+                    margin: 0;
+
+                    &-title
+                    {
+                        text-align: center;
+                    }
+
+                    &-subtitle
+                    {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        
+
+        .cards
+        {
+            &-title
+            {
+                font-size: $small-title-font-size;
+                font-weight: 510;
+                margin-bottom: 10px;
+                width: 70%;
+                text-align: center;
+            }
+        }
+    }
+
+    .breadcrumb-brookfield
+    {
+        flex-direction: column;
+
+        &__title
+        {
+            padding-left: 0; 
+        }
+
+        &__section
+        {
+            padding-right: 0; 
+        }
+    }
+
+    .brookfield-footer
+    {
+        .brookfield-footer
+        {
+            &__title
+            {
+                text-align: left;
+                font-size: $subtitle-font-size;
+            }
+
+            &__img
+            {
+                width: 20%;
+                margin-bottom: 50px;
+                min-width: 200px;    
+            }
+
+            &-media
+            {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 20px;
+                margin-top: 40px;
+            }
+        }
+    }
+
+    .brookfield-copy
+    {
+        &__title
+        {
+            text-align: center;
+        }
+    }
+}
+
+@media (min-width: 481px) and (max-width: 1023px)
+{
+    .header-brookfield
+    {
+        &__contain
+        {
+            margin-right: 5%;
+            margin-left: 5%;
+
+            &-link
+            {
+                min-width: 0;
+                
+                &-duo
+                {
+                    margin: 0;
+                }
+            }
+            .navbar-brookfield
+            {
+                justify-content: flex-end;
+
+                .navbar-brookfield__menu
+                {
+                    display: none; 
+                }
+                
+                .mobile-nav-toggle
+                {
+                    display: block;
+                }
+            }
+
+            .navbar-mobile 
+            {
+                display: flex;
+                position: fixed;
+                overflow: hidden;
+                top: 0;
+                right: 0;
+                left: 0;
+                bottom: 0;
+                background: rgba(23, 35, 46, 0.9);
+                transition: 0.3s;
+                z-index: 999;
+
+                .mobile-nav-toggle 
+                {
+                    position: absolute;
+                    top: 15px;
+                    right: 15px;
+                }
+
+                .mobile__navbar-brookfield
+                {
+                    display: flex;
+                    flex-direction: column;
+                    align-content: center;
+                    justify-content: flex-start;
+                    align-items: center;
+                    position: absolute;
+                    top: 55px;
+                    right: 15px;
+                    bottom: 15px;
+                    left: 15px;
+                    padding: 10px 0;
+                    background-color: $white;
+                    overflow-y: auto;
+                    transition: 0.3s;
+
+                    &-item
+                    {
+                        font-size: 15px;
+                        padding: 10px 20px;
+
+                        &-link
+                        {
+                            color: $brookfield-blue;
+                            justify-content: center;
+                            font-weight: 500;
+                            margin-bottom: 5px;
+                        }
+                    }
+
+                    &-block
+                    {
+                        box-shadow: $heavy-shadow;
+                        width: 90%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        margin: 10px 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .brookfield-main
+    {
+        .product-description
+        {
+            .product-description__title 
+            {
+                margin-bottom: 50px;
+                font-size: $title-font-size;
+            }
+        }
+
+        .components
+        {
+            .components-title
+            {
+                font-size: $title-font-size;
+                width: 100%;
+            }
+
+            &-subtitle
+            {
+                font-size: $subtitle-font-size;
+                width: 100%;
+            }
+            
+            .products
+            {
+                width: 100%;
+                padding: 0;
+
+                &__title
+                {
+                    padding: 0;
+                    font-size: $title-font-size;
+                    margin-bottom: 50px;
+                    padding: 10px 10px;
+                }
+
+                &__subtitle
+                {
+                    padding: 0;
+                    text-align: center;
+                    margin-bottom: 40px;
+                    font-size: $social-font-size;
+                    padding: 10px 10px;
+                }
+
+                .swiper-container
+                {
+                    width: 100%;
+                    height: auto;
+
+                    .swiper-wrapper
+                    {
+                        .swiper-slide
+                        {
+                            height: 1800px;
+                            border-radius: 10px;
+                            padding: 0;
+
+                            .products__row
+                            {
+                                flex-direction: column;
+
+                                &-img
+                                {
+                                    width: 100%;
+                                    height: auto;
+                                    max-width: 300px;
+                                    margin: 0;
+                                }
+
+                                &-column
+                                {
+                                    width: 90%;
+                                }
+
+                                &-list
+                                {
+                                    &-item
+                                    {
+                                        font-size: $social-font-size;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .standarized
+        {
+            .standarized-title
+            {
+                font-size: $title-font-size;
+                text-align: center;
+            }
+
+            &-subtitle
+            {
+                font-size: $subtitle-font-size;
+                text-align: center;
+            }
+
+            &__products
+            {
+                &-row
+                {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    align-items: center;
+                    align-content: center;
+
+                    &-column
+                    {
+                        width: 90%;
+                        padding: 10px 10px;
+                        margin-bottom: 50px;
+
+                        &-img
+                        {
+                            width: 100%;
+                            padding: 50px 50px;
+                            max-width: 300px;
+                        }
+
+                        &-title
+                        {
+                            padding: 20px 20px;
+                            font-size: $breadcrumb-font-size;
+                            text-align: center;
+                            font-weight: 500;
+                        }
+
+                        &-subtitle
+                        {
+                            padding: 20px 20px;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+        
+        .reasons
+        {
+            .reasons-title
+            {
+                font-size: $title-font-size;
+            }
+
+            &-subtitle
+            {
+                font-size: $subtitle-font-size;
+                text-align: center;
+            }
+            
+            &__row
+            {
+                flex-direction: column;
+
+                &-column
+                {
+                    padding: 6% 6%;
+                    margin: 0;
+
+                    &-title
+                    {
+                        text-align: center;
+                    }
+
+                    &-subtitle
+                    {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        
+
+        .cards
+        {
+            &-title
+            {
+                font-size: $title-font-size;
+                font-weight: 510;
+                margin-bottom: 10px;
+                width: 70%;
+                text-align: center;
+            }
+        }
+    }
+
+    .breadcrumb-brookfield
+    {
+        flex-direction: column;
+
+        &__title
+        {
+            padding-left: 0; 
+        }
+
+        &__section
+        {
+            padding-right: 0; 
+        }
+    }
+
+    .brookfield-footer
+    {
+        .brookfield-footer
+        {
+            &__title
+            {
+                text-align: left;
+                font-size: $subtitle-font-size;
+            }
+
+            &__img
+            {
+                width: 20%;
+                margin-bottom: 50px;
+                min-width: 200px;    
+            }
+
+            &-media
+            {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 20px;
+                margin-top: 40px;
+            }
+        }
+    }
+
+    .brookfield-copy
+    {
+        &__title
+        {
+            text-align: center;
+        }
+    }
+}

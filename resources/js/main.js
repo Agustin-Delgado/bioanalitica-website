@@ -196,6 +196,35 @@
       },
     });
 
+    var swiper = new Swiper(".mySwiperFive", {
+      effect: "fade",
+      slidesPerView: 1,
+      autoplay: true,
+      loop: true,
+
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+
+    var swiper = new Swiper(".mySwiperSix", {
+      slidesPerView: 1,
+      autoplay: true,
+      loop: true,
+
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+
     var menu = ['Neurooncología', 'Base del craneo', 'Columna vertebral', 'Neurovascular', 'Funcional', 'Pediatría']
     var swiper = new Swiper(".mySwiperTwo", {
       spaceBetween: 30,

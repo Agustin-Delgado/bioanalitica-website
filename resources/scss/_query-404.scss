@@ -1,0 +1,30 @@
+@media (max-width: 991px)
+{
+    .not-found__main
+    {
+            &-content{
+
+            &-title
+            {
+                font-size: $title-font-size;
+                padding: 0;
+            }
+            
+            &-subtitle
+            {
+                font-size: $subtitle-font-size;
+            }
+
+            &-error
+            {
+                p
+                {
+                    color: $white;
+                    font-size: $big-title-font-size;
+                }
+            }
+        }
+    }
+}
+
+

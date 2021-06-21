@@ -2,21 +2,19 @@
 {
     display: flex;
     background-color: $secondary-orange;
-    padding-bottom: 40px;
+    padding: 6% 0;
     box-shadow: $soft-shadow;
-    border-radius: 50px;
     flex-direction: column;
     align-content: center;
     align-items: center;
     justify-content: center;
 
-
     &__title
     {
-        color: white;
+        color:$white;
         margin-top: 20px;
         margin-bottom: 20px;
-        font-size: $title-font-size;
+        font-size: $big-submenu-title-font-size;
         font-weight: 500;
         text-align: center;
     }
@@ -24,7 +22,7 @@
 
     &__subtitle
     {
-        color: white;
+        color:$white;
         font-style: italic;
         font-size: $subtitle-font-size;
         margin-bottom: 40px;
@@ -62,7 +60,7 @@
 
         &::before 
         {
-            background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+            background: linear-gradient(to right,$white 0%, rgba(255, 255, 255, 0) 100%);
             content: "";
             height: 100px;
             position: absolute;
@@ -72,7 +70,7 @@
 
         &::after 
         {
-            background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+            background: linear-gradient(to right,$white 0%, rgba(255, 255, 255, 0) 100%);
             content: "";
             height: 100px;
             position: absolute;

@@ -1,7 +1,7 @@
 .service
 {
     display: flex;
-    padding: 90px 0px 90px;
+    padding: 6% 0;
     text-align: center;
     background-color: $white;
     flex-direction: column;
@@ -11,7 +11,7 @@
         color: $black;
         margin-top: 35px;
         margin-bottom: 40px;
-        font-size: $title-font-size;
+        font-size: $big-submenu-title-font-size;
         font-weight: 500;
     }
 
@@ -27,42 +27,108 @@
         {
             display: flex;
             flex-direction: row;
-            justify-content: space-around;
+            flex-wrap: wrap;
+            justify-content: center;
             align-items: center;
+            margin-bottom: 6%;
 
-            &__card
+            &__column
             {
-            width: 400px;
-            height: 400px;
-            margin-bottom: 70px;
+                position: relative;
+                width: 18%;
+                min-width: 250px;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                align-content: center;
+                border-radius: 10px;
+                transition: 300ms ease-in-out;
+                margin: 45px 45px;
 
-            &-title
-            {
-                margin-left: 80px;
-                margin-right: 80px;
-                font-weight: 700;
-                font-size: $subtitle-font-size;
+                &-img
+                {
+                    width: 100%;
+                    border-radius: 100%;
+                }
+
+                &-hover
+                {
+                    visibility: hidden;
+                    opacity: 0;
+                    position: absolute;
+                    display: flex;
+                    flex-direction: column;
+                    align-content: center;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: rgba(248, 150, 58, 0.5);
+                    width: 100%;
+                    top: 0;
+                    height: 100%;
+                    transition: visibility 300ms ease-in-out, opacity 300ms ease-in-out;
+                    border-radius: 100%;
+
+                    &-subtitle
+                    {
+                        padding: 30px 10px;
+                        text-align: center;
+                        color: $white;
+                        font-style: italic;
+                        font-size: $subtitle-font-size;
+                    }
+
+                    &-title
+                    {
+                        color: $white;
+                        padding: 30px 10px;
+                        font-weight: 500;
+                        font-size: $subtitle-font-size;
+                    } 
+                }     
+
+                &:hover
+                {
+                    transform: scale(1.05);
+                    box-shadow: $heavy-shadow;
+                    border-radius: 100%;
+
+                    .service-content__column-hover
+                    {
+                        visibility: visible;
+                        opacity: 1;
+                        position: absolute;
+                        display: flex;
+                        flex-direction: column;
+                        align-content: center;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: rgba(248, 150, 58, 0.5);
+                        width: 100%;
+                        top: 0;
+                        height: 100%;
+                        border-radius: 100%;
+
+                        &-subtitle
+                        {
+                            padding: 30px 10px;
+                            text-align: center;
+                            color: $white;
+                            font-style: italic;
+                            font-size: $subtitle-font-size;
+                        }
+
+                        &-title
+                        {
+                            color: $white;
+                            padding: 30px 10px;
+                            font-weight: 500;
+                            font-size: $subtitle-font-size;
+                        } 
+                    }
+                }
             }
-
-            &-img
-            {
-                display: inline-block;
-                width: 300px;
-                height: 300px;
-                border-radius: 100%;
-                border: 3px solid #fc742b49;
-                padding: 3px;
-                box-shadow: $heavy-shadow;
-                margin: 10px 0px 10px 0px;
-            }
-            &-subtitle
-            {
-                margin-left: 80px;
-                margin-right: 80px;
-                font-style: italic;
-                font-size: $subtitle-font-size;
-            }
-
         }
-    }
+    
 }

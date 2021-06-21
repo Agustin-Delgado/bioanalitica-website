@@ -158,7 +158,7 @@
                     {
                         color: $brookfield-blue;
                         background-color: $white;
-                        height: 1150px;
+                        height: 1550px;
                         border-radius: 10px;
                         padding: 50px 50px;
 
@@ -275,7 +275,7 @@
                         width: 40%;
                         height: auto;
                         margin-bottom: 30px;
-                        padding: 50px 50px;
+                        padding: 50px auto;
                         background: $white;
                         border-radius: 10px;
                     }
@@ -349,6 +349,7 @@
             font-size: $subtitle-font-size;
             color: $white;
             padding-bottom: 3%;
+            text-align: center;
         }
         
         &__row
