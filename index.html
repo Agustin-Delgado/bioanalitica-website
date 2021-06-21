@@ -15,18 +15,17 @@
         content="Bioanalítica desde hace 15 años brinda seguridad a las firmas gracias a nuestros procesos certificados, y tranquilidad al cliente a través de profesionales capacitados. Nuestra forma de trabajo permite a ambos clientes, tener en tiempo real la información y los datos de cada proceso, con la trazabilidad correspondiente y la disponibilidad de auditorías.">
     <meta name="keywords" content="ENDOSCOPIA, MEDICINA, PRODUCTOS MEDICOS, SERVICIO TECNICO, CIRUGIA">
 
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-
-    <link href="resources/scss/style.css" rel="stylesheet"> <!-- Linkeo de recurso css -->
-
+    <link href="resources/scss/style.css" rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,400,500,700"
-        rel="stylesheet"> <!-- Fuente de google fonts -->
+        rel="stylesheet">
+    <link rel="shortcut icon" href="./resources/images/favicon.ico" type="image/x-icon">
 
     <title>Bio Analitica - Great Place To Grow</title>
-
-    <link rel="shortcut icon" href="./resources/images/favicon.ico" type="image/x-icon">
 
 </head>
 
@@ -34,7 +33,7 @@
 
 <!--- INICIO BODY --->
 
-<body>
+<body id="inicio">
 
     <!--- INICIO HEADER --->
 
@@ -165,7 +164,9 @@
                             <li class="mobile__navbar-item"><a class="mobile__navbar-item-link"
                                     href="./index.html#contacto">Contacto</a>
                             </li>
+
                         </div>
+                        
                     </ul>
 
                     <i class="bi bi-list mobile-nav-toggle"></i>
@@ -182,7 +183,7 @@
 
     <!--- INICIO HERO --->
 
-    <section id="inicio">
+    <section>
 
         <div class="video-content">
 
@@ -204,36 +205,157 @@
         <section id="productos" class="productos" data-aos="fade-up">
 
             <h3 class="productos__title">Nuestros productos</h3>
-            <p class="productos__subtitle">Un asesor estará a su disposición para aclarar cualquier duda acerca de
-                nuestros productos y
-                servicios.</p>
+            <p class="productos__subtitle">Proveemos dispositivos y equipos médicos de alta calidad para diferentes
+                especialidades, con el fin de cumplir con los requisitos de nuestros clientes y otros aplicables,
+                brindando seguridad y confianza a los profesionales de la salud para contribuir a un mejor pronóstico
+                del paciente.</p>
 
-            <div class="productos-content" data-aos="zoom-in">
+            <div class="swiper-container mySwiperFive">
 
-                <div class="productos-content__card">
+                <div class="swiper-wrapper">
 
-                    <img class="productos-content__card-img" src="./resources/images/GIF-HQ190.png"
-                        alt="Gastrovideoscopio 190">
-                    <h4 class="productos-content__card-title">Producto 1</h4>
-                    <p class="productos-content__card-subtitle">Lorem ipsum dolor sit amet consectetur.</p>
+                    <div class="swiper-slide">
 
-                </div>
+                        <div class="swiper-slide__content">
 
-                <div class="productos-content__card">
+                            <img class="swiper-slide__content-logo"
+                                src="./resources/images/intuitive/Intuitive2-1024x274.png" alt="">
+                            <h4 class="swiper-slide__content-title">Da Vinci por Intuitive</h4>
+                            <p class="swiper-slide__content-subtitle">Permitir la atención quirúrgica para que los
+                                pacientes
+                                vuelvan a lo que importa</p>
 
-                    <img class="productos-content__card-img" src="./resources/images/CF-H190LI.png"
-                        alt="Colonovideoscopio 190">
-                    <h4 class="productos-content__card-title">Producto 2</h4>
-                    <p class="productos-content__card-subtitle">Lorem ipsum dolor sit amet consectetur.</p>
+                            <div class="swiper-slide__content-button">
 
-                </div>
+                                <a class="swiper-slide__content-button-link"
+                                    href="./productos-medicina/productos-intuitive.html">Ver más</a>
 
-                <div class="productos-content__card">
+                            </div>
 
-                    <img class="productos-content__card-img" src="./resources/images/GIF-N180.png"
-                        alt="Gastrovideoscopio 180">
-                    <h4 class="productos-content__card-title">Producto 3</h4>
-                    <p class="productos-content__card-subtitle">Lorem ipsum dolor sit amet consectetur.</p>
+                        </div>
+
+                        <img class="swiper-slide__img"
+                            src="./resources/images/intuitive/surgeon-looking-into-davinci-console.jpg" alt="">
+
+                    </div>
+
+                    <div class="swiper-slide">
+
+                        <div class="swiper-slide__content">
+
+                            <img class="swiper-slide__content-logo"
+                                src="./resources/images/olympus/olympus-logo-black-and-white.png" alt="">
+                            <h4 class="swiper-slide__content-title">EVIS EXERA III</h4>
+                            <p class="swiper-slide__content-subtitle">Avanzando el arte de la endoscopía.</p>
+
+                            <div class="swiper-slide__content-button">
+
+                                <a class="swiper-slide__content-button-link"
+                                    href="./productos-medicina/productos-olympus.html">Ver más</a>
+
+                            </div>
+
+                        </div>
+
+                        <img class="swiper-slide__img" src="./resources/images/olympus/banner-01.jpg" alt="">
+
+                    </div>
+
+                    <div class="swiper-slide">
+
+                        <div class="swiper-slide__content">
+
+                            <img class="swiper-slide__content-logo" src="./resources/images/polymedco/Polymedco (1).png"
+                                alt="">
+                            <h4 class="swiper-slide__content-title">Pathfast</h4>
+                            <p class="swiper-slide__content-subtitle">Mejore los resultados de los pacientes y
+                                la eficiencia hospitalaria con PATHFAST</p>
+
+                            <div class="swiper-slide__content-button">
+
+                                <a class="swiper-slide__content-button-link"
+                                    href="./productos-analitica/productos-polymedco.html">Ver más</a>
+
+                            </div>
+
+                        </div>
+
+                        <img class="swiper-slide__img"
+                            src="./resources/images/polymedco/fit-test_wide-b327ba612aafffbdf69ba1d1c254595a098dbca4.jpg"
+                            alt="">
+
+                    </div>
+
+                    <div class="swiper-slide">
+
+                        <div class="swiper-slide__content">
+
+                            <img class="swiper-slide__content-logo"
+                                src="./resources/images/eppendorf/Eppendorf-Logo.svg.png" alt="">
+                            <h4 class="swiper-slide__content-title">Pipetas, centrifugadoras, biorreactores...</h4>
+                            <p class="swiper-slide__content-subtitle">Experiencia y competencia para atender sus
+                                necesidades
+                            </p>
+
+                            <div class="swiper-slide__content-button">
+
+                                <a class="swiper-slide__content-button-link"
+                                    href="./productos-analitica/productos-eppendorf.html">Ver más</a>
+
+                            </div>
+
+                        </div>
+
+                        <img class="swiper-slide__img" src="./resources/images/eppendorf/banner-viscotip.jpg" alt="">
+
+                    </div>
+
+                    <div class="swiper-slide">
+
+                        <div class="swiper-slide__content">
+
+                            <img class="swiper-slide__content-logo" src="./resources/images/bk/BK-MEDICAL-WHITE-1.png"
+                                alt="">
+                            <h4 class="swiper-slide__content-title">Tome decisiones críticas con imagen activa</h4>
+                            <p class="swiper-slide__content-subtitle">Explore nuestra gama de productos de imagen activa
+                            </p>
+
+                            <div class="swiper-slide__content-button">
+
+                                <a class="swiper-slide__content-button-link"
+                                    href="./productos-medicina/productos-bk.html">Ver más</a>
+
+                            </div>
+
+                        </div>
+
+                        <img class="swiper-slide__img" src="./resources/images/bk/homepage-hero.jpg" alt="">
+
+                    </div>
+
+                    <div class="swiper-slide">
+
+                        <div class="swiper-slide__content">
+
+                            <img class="swiper-slide__content-logo"
+                                src="./resources/images/brookfield/Brookfield_Asset_Management_logo.svg.png" alt="">
+                            <h4 class="swiper-slide__content-title">Proteja su inversión</h4>
+                            <p class="swiper-slide__content-subtitle">Caracterización de materiales en su máxima
+                                expresión
+                            </p>
+
+                            <div class="swiper-slide__content-button">
+
+                                <a class="swiper-slide__content-button-link"
+                                    href="./productos-analitica/productos-brookfield.html">Ver más</a>
+
+                            </div>
+
+                        </div>
+
+                        <img class="swiper-slide__img" src="./resources/images/brookfield/Brookfield.jpg" alt="">
+
+                    </div>
 
                 </div>
 
@@ -248,33 +370,137 @@
         <section id="service" class="service" data-aos="fade-up">
 
             <h3 class="service__title">Nuestro equipo</h3>
-            <p class="service__subtitle">Un asesor estará a su disposición para aclarar cualquier duda acerca de
-                nuestros productos y
-                servicios.</p>
+            <p class="service__subtitle">Conozca a nuestro equipo, capacitado y comprometido con la filosofia Great Place to Grow.</p>
 
             <div class="service-content" data-aos="zoom-in">
 
-                <div class="service-content__card">
+                <div class="service-content__column">
 
-                    <h4 class="service-content__card-title">Nombre 1</h4>
-                    <img class="service-content__card-img" src="./resources/images/team-1.jpg" alt="Miembro del equipo">
-                    <p class="service-content__card-subtitle">Cargo 1</p>
+                    <div class="service-content__column-hover">
 
-                </div>
+                        <h4 class="service-content__column-hover-title">Antonella De Blasio</h4>
+                        <p class="service-content__column-hover-subtitle">Administración y finanzas</p>
 
-                <div class="service-content__card">
+                    </div>
 
-                    <h4 class="service-content__card-title">Nombre 2</h4>
-                    <img class="service-content__card-img" src="./resources/images/team-3.jpg" alt="Miembro del equipo">
-                    <p class="service-content__card-subtitle">Cargo 2</p>
+                    <img class="service-content__column-img" src="./resources/images/service/anto.jpg" alt="">
 
                 </div>
 
-                <div class="service-content__card">
+                <div class="service-content__column">
 
-                    <h4 class="service-content__card-title">Nombre 3</h4>
-                    <img class="service-content__card-img" src="./resources/images/team-4.jpg" alt="Miembro del equipo">
-                    <p class="service-content__card-subtitle">Cargo 3</p>
+                    <div class="service-content__column-hover">
+
+                        <h4 class="service-content__column-hover-title">Augusto Cordoba</h4>
+                        <p class="service-content__column-hover-subtitle">Técnico</p>
+
+                    </div>
+
+                    <img class="service-content__column-img" src="./resources/images/service/augu.jpg" alt="">
+
+                </div>
+
+                <div class="service-content__column">
+
+                    <div class="service-content__column-hover">
+
+                        <h4 class="service-content__column-hover-title">Diego Salerno</h4>
+                        <p class="service-content__column-hover-subtitle">Calidad</p>
+
+                    </div>
+
+                    <img class="service-content__column-img" src="./resources/images/service/diego.jpg" alt="">
+
+                </div>
+
+                <div class="service-content__column">
+
+                    <div class="service-content__column-hover">
+
+                        <h4 class="service-content__column-hover-title">Federico Marina</h4>
+                        <p class="service-content__column-hover-subtitle">Coordinador de STA y Bk Medical</p>
+
+                    </div>
+
+                    <img class="service-content__column-img" src="./resources/images/service/fede.jpg" alt="">
+
+                </div>
+
+                <div class="service-content__column">
+
+                    <div class="service-content__column-hover">
+
+                        <h4 class="service-content__column-hover-title">Federico Ferreyra</h4>
+                        <p class="service-content__column-hover-subtitle">Asesor comercial</p>
+
+                    </div>
+
+                    <img class="service-content__column-img" src="./resources/images/service/fedef.jpg" alt="">
+
+                </div>
+
+                <div class="service-content__column">
+
+                    <div class="service-content__column-hover">
+
+                        <h4 class="service-content__column-hover-title">Gonzalo Goggi</h4>
+                        <p class="service-content__column-hover-subtitle">Coordinador STM y MP</p>
+
+                    </div>
+
+                    <img class="service-content__column-img" src="./resources/images/service/gonzi.jpg" alt="">
+
+                </div>
+
+                <div class="service-content__column">
+
+                    <div class="service-content__column-hover">
+
+                        <h4 class="service-content__column-hover-title">Juan Espindola</h4>
+                        <p class="service-content__column-hover-subtitle">CSR Intuitive y Bk Medical</p>
+
+                    </div>
+
+                    <img class="service-content__column-img" src="./resources/images/service/juan.jpg" alt="">
+
+                </div>
+
+                <div class="service-content__column">
+
+                    <div class="service-content__column-hover">
+
+                        <h4 class="service-content__column-hover-title">Ignacio Luna</h4>
+                        <p class="service-content__column-hover-subtitle">Técnico</p>
+
+                    </div>
+
+                    <img class="service-content__column-img" src="./resources/images/service/nacho.jpg" alt="">
+
+                </div>
+
+                <div class="service-content__column">
+
+                    <div class="service-content__column-hover">
+
+                        <h4 class="service-content__column-hover-title">Natasha Rodriguez</h4>
+                        <p class="service-content__column-hover-subtitle">Administración</p>
+
+                    </div>
+
+                    <img class="service-content__column-img" src="./resources/images/service/nati.jpg" alt="">
+
+                </div>
+
+                <div class="service-content__column">
+
+                    <div class="service-content__column-hover">
+
+                        <h4 class="service-content__column-hover-title">Pablo Del Brocco</h4>
+                        <p class="service-content__column-hover-subtitle">Team Leader</p>
+
+                    </div>
+
+                    <img class="service-content__column-img" src="./resources/images/service/pablo.jpg" alt="">
 
                 </div>
 
@@ -288,8 +514,8 @@
 
         <section id="sponsors" class="sponsors" data-aos="fade-up">
 
-            <h3 class="sponsors__title">Sponsors</h3>
-            <p class="sponsors__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, repellendus.
+            <h3 class="sponsors__title">Representaciones</h3>
+            <p class="sponsors__subtitle">Somos representantes oficiales y partners de las siguientes marcas.
             </p>
 
             <div class="slider">
@@ -589,6 +815,8 @@
 
     <!-- FIN COPY --->
 
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./resources/js/main.js"></script>
 

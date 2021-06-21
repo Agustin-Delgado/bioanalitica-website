@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<url>
+  <loc>https://agustin-delgado.github.io/bioanalitica-website/index.html</loc>
+  <lastmod>2021-06-08T23:39:11+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://agustin-delgado.github.io/bioanalitica-website/productos-medicina/productos-intuitive.html</loc>
+  <lastmod>2021-06-08T23:39:11+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://agustin-delgado.github.io/bioanalitica-website/productos-medicina/productos-olympus.html</loc>
+  <lastmod>2021-06-08T23:39:11+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://agustin-delgado.github.io/bioanalitica-website/productos-medicina/productos-bk.html</loc>
+  <lastmod>2021-06-08T23:39:11+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://agustin-delgado.github.io/bioanalitica-website/productos-analitica/productos-polymedco.html</loc>
+  <lastmod>2021-06-08T23:39:11+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://agustin-delgado.github.io/bioanalitica-website/productos-analitica/productos-eppendorf.html</loc>
+  <lastmod>2021-06-08T23:39:11+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://agustin-delgado.github.io/bioanalitica-website/productos-analitica/productos-brookfield.html</loc>
+  <lastmod>2021-06-08T23:39:11+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://agustin-delgado.github.io/bioanalitica-website/nuestro-servicio-tecnico/service.html</loc>
+  <lastmod>2021-06-08T23:39:11+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
+</urlset>

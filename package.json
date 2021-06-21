@@ -20,6 +20,8 @@
   "homepage": "https://github.com/Agustin-Delgado/bioanalitica-website#readme",
   "devDependencies": {
     "node-sass": "^6.0.0",
-    "nodemon": "^2.0.7"
+    "nodemon": "^2.0.7",
+    "aos": "3.0.0-beta.6",
+    "swiper": "6.6.2"
   }
 }
